@@ -18,6 +18,9 @@ Contents:
 
    sourcecode
    codingstandards
+   pluginsystem/index
+   schemas/index
+   themesystem
    checklists/index
 
 
