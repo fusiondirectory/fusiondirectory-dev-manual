@@ -1,5 +1,5 @@
 Writing a plugin for FusionDirectory
-==========
+====================================
 
 You can write plugins for FusionDirectory using our simplePlugin class.
 
@@ -10,3 +10,4 @@ You can write plugins for FusionDirectory using our simplePlugin class.
    start
    further
    plinfo
+   attributes

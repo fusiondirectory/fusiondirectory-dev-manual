@@ -79,7 +79,7 @@ There are also three special kind of attributes, SetAttribute, ArrayAttribute an
 SetAttribute and ArrayAttribute might both be used for multi-valuated attribute. Array will allow several identical values while Set won't.
 A composite attribute is a unique LDAP attribute composed of several displayed attributes. You'll see one in the following example.
 
-For more information about each type of attribute, see [[en:documentation_dev:simple_plugin_attributes|Simple Plugin Attributes]]
+For more information about each type of attribute, see :ref:`attributes`
 
 Example
 -------
