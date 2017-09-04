@@ -65,9 +65,9 @@ This is the code for an empty plugin:
   }
 
 With this code you'll have an empty plugin, just adding the "demoPlugin" objectClass.
-The [[en:documentation_dev:plInfo|plInfo]] static function must provide informations about your plugin.
+The :ref:`pl-info` static function must provide informations about your plugin.
 Please fill **plShortName** and **plDescription** with something meaningful (and **plTitle** as well if your plugin have its own page).
-See [[en:documentation_dev:plInfo|plInfo]] for more details about other fields
+See :ref:`pl-info` for more details about other fields
 
 Attributes
 ----------
