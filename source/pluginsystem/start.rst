@@ -1,3 +1,5 @@
+.. include:: /globals.rst
+
 Getting started
 ===============
 This page is a how-to to help you write a dummy plugin.
@@ -19,6 +21,7 @@ Your plugin should have a *main.inc* file if you intend it to display on its own
 
 Icons
 -----
+
 If your plugin packs some icons, they need to be placed in the default icon theme:
 *{fd-directory}/html/themes/default/icons/{size}/{category}*
 Most of the time your icons are those of an application and should therefore be placed in the *apps* folder, which is for the category *applications*.
@@ -71,6 +74,7 @@ See :ref:`pl-info` for more details about other fields
 
 Attributes
 ----------
+
 You might have noticed the empty getAttributesInfo method. This is where the magic happens.
 You should fill this function with an array of sections containing attributes.
 Available attribute types are BooleanAttribute, IntAttribute, FloatAttribute, StringAttribute, SelectAttribute, PasswordAttribute…
@@ -163,14 +167,17 @@ For each section you might also specify keys 'icon' with a section icon path, or
 
 Displaying the plugin in FusionDirectory
 ----------------------------------------
+
 Put the plugin code into a directory FusionDirectory is reading (see above).
-Run <code>"fusiondirectory-setup --update-cache"</code> as root.
+Run :shell:`fusiondirectory-setup --update-cache` as root.
 Log out, log in.
 A tab should now show in user edition mode, with the attributes we specified:
-{{:en:documentation_dev:demoplugin.png?800|}}
+
+.. image:: /_static/images/demoplugin.png
 
 Displaying the plugin in the "My account" menu
 ----------------------------------------------
+
 You may also want the plugin to show in the "My Account" menu, if your plugin is for users and you've set plModifySelf to TRUE.
 For this, you need your plugin to have a main.inc PHP file.
 Just put this in it:

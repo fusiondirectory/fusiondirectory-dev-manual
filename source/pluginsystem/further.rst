@@ -21,7 +21,7 @@ Change **templatePath** value to your custom template path (usually in the const
 In your template, you'll be able to use the $sections array that contains each section render.
 For instance:
 
-.. code:: smarty
+.. code-block:: smarty
 
     <h1>Hello world!</h1>
     <div class="plugin_sections">
@@ -194,7 +194,7 @@ Please don't touch the fieldset, legend and table, just replace the foreach by w
 You need to use the attributes array, which contain for each attribute, indexed by its ldap name, its label and its input html code.
 For instance, for the above section, doing the following would have the same result than the default template:
 
-.. code::
+.. code-block:: smarty
 
     <fieldset id="{$sectionId}" class="plugin_section{$sectionClasses}">
       <legend>{$section}</legend>

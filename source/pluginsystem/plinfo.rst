@@ -79,7 +79,7 @@ aclCategory should be the name of an existing ACL category. Most of the time omi
 
 For instance, this is the plObjectType of the user class:
 
-.. code:: php
+.. code-block:: php
 
   <?php
   'plObjectType'  => array(
@@ -101,7 +101,7 @@ For instance the manager field in a department is a foreign key on the dn of a u
 
 The syntax for this is:
 
-.. code:: php
+.. code-block:: php
 
   <?php
   'plForeignKeys'  => array(
@@ -112,7 +112,7 @@ The syntax for this is:
 
 But you can omit *filter* most of the time (defaults to '*myfield*=%oldvalue%') and *hisfield* if it is the *dn*, and if there is only one field you are referring to you can omit the array, so for our department example this gives us:
 
-.. code:: php
+.. code-block:: php
 
   'plForeignKeys'  => array(
     'manager' => 'user'

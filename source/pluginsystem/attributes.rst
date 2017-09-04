@@ -109,7 +109,7 @@ Allow to handle several UI attributes which are stored as only one LDAP field.
 For instance let's say you store an FTP connection URL in an LDAP field as "ftp://user:password@host:port" but you want to display 4 inputs for the 4 parts.
 That would look like :
 
-.. code:: php
+.. code-block:: php
 
     <?php
     new CompositeAttribute (

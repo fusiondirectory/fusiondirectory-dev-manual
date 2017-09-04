@@ -19,7 +19,7 @@ Icon theme file
 
 Here is the minimal index.theme file to inherit another icon theme.
 
-.. code:: ini
+.. code-block:: ini
 
   [Icon Theme]
   Name=MyTheme
@@ -31,7 +31,7 @@ For an example of a more complex index.theme file look at the one of the default
 All main icon themes should be working, you can activate them by using a symlink in the right folder.
 For instance on Debian if I want gnome icon theme:
 
-.. code:: bash
+.. code-block:: bash
 
   $ ls -l /usr/share/fusiondirectory/html/themes/
   drwxr-xr-x 4 root root 4096 Mar 16 10:24 breezy/
