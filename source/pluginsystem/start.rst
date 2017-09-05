@@ -168,10 +168,11 @@ For each section you might also specify keys 'icon' with a section icon path, or
 Displaying the plugin in FusionDirectory
 ----------------------------------------
 
-Put the plugin code into a directory FusionDirectory is reading (see above).
-Run :shell:`fusiondirectory-setup --update-cache` as root.
-Log out, log in.
-A tab should now show in user edition mode, with the attributes we specified:
+* Put the plugin code into a directory FusionDirectory is reading (see above).
+* Run :shell:`fusiondirectory-setup --update-cache` as root.
+* Log out, log in.
+
+A tab should now shows in user edition mode, with the attributes we specified:
 
 .. image:: /_static/images/demoplugin.png
 

@@ -38,7 +38,12 @@ No need to set any **plSection** on plugins with objectType *user* and selfModif
 they'll appear in the 'My account' section anyway.
 
 You can also create a new menu section in this attribute using the following syntax:
-array('*mysection*' => array('name' => _('*My section*'), 'priority' => *100*))
+
+.. code-block:: php
+
+    <?php
+    array('mysection' => array('name' => _('My section'), 'priority' => 100))
+    
 Replace *mysection* with a lowercase id for your section and *My section* with the name to display in the menu.
 
 The existing sections are:
@@ -114,6 +119,7 @@ But you can omit *filter* most of the time (defaults to '*myfield*=%oldvalue%') 
 
 .. code-block:: php
 
+  <?php
   'plForeignKeys'  => array(
     'manager' => 'user'
   )
@@ -131,5 +137,15 @@ plCategory
 
 ACL categories will be filled automagically if you use either **plManages** or **plObjectType**. This is the recommanded way to go.
 If you do need to specify ACL categories, you can create an acl category by specifying a descriptive array for it:
-:code:`'plCategory' => array('acl' => array('description'  => _('ACL'), 'objectClass'  => array('gosaAcl','gosaRole'))),
-An ACL category only contains a description and a list of LDAP objectClasses (for some historical reason)`.
+
+.. code-block:: php
+
+    <?php
+    'plCategory' => array(
+        'acl' => array(
+            'description'  => _('ACL'), 
+            'objectClass'  => array('gosaAcl','gosaRole')
+        )
+     ),
+     
+An ACL category only contains a description and a list of LDAP objectClasses (for some historical reason)

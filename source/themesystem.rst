@@ -26,7 +26,7 @@ Here is the minimal index.theme file to inherit another icon theme.
   Comment=Example from documentation
   Inherits=oxygen
 
-For an example of a more complex index.theme file look at the one of the default theme: https://git.fusiondirectory.org/gitweb/?p=main/fusiondirectory.git;a=blob;f=html/themes/breezy/index.theme;h=a8adbcbea8e9cf20fc3447232bacba54e4fbaa41;hb=refs/heads/master
+For an example of a more complex index.theme file look at `the one of the default theme <https://gitlab.fusiondirectory.org/fusiondirectory/fd/blob/e2d1369485f03dec3ac9886deba8606ceec897f2/html/themes/breezy/index.theme>`_
 
 All main icon themes should be working, you can activate them by using a symlink in the right folder.
 For instance on Debian if I want gnome icon theme:

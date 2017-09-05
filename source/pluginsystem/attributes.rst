@@ -97,8 +97,10 @@ ArrayAttribute and SetAttribute
 
 Allow to handle a multi-valuated attribute.
 The constructor takes only two parameters:
-An attribute, which is one of the above.
-An array of default values.
+
+* An attribute, which is one of the above.
+* An array of default values.
+
 A multiple select will be used for displaying values, with remove and add buttons.
 SetAttribute is the same, but does not allow several identical values.
 

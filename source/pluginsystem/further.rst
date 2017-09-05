@@ -18,7 +18,7 @@ custom template
 By default simplePlugin does a template for you, but if you want to add some elements to the template, or just render the sections in a different order, or that kind of things, here's what to do:
 Change **templatePath** value to your custom template path (usually in the constructor, using get_template_path).
 
-In your template, you'll be able to use the $sections array that contains each section render.
+In your template, you'll be able to use the **$sections** array that contains each section render.
 For instance:
 
 .. code-block:: smarty
@@ -38,7 +38,7 @@ For instance:
       -->
     </script>
 
-You need to add the hidden input at the end in order for the POST analysis to work.
+You need to add the **hidden** input at the end in order for the POST analysis to work.
 The script is needed if you want the auto-focusing of first field to work.
 
 simplePlugin attributes values and methods
