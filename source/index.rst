@@ -21,8 +21,8 @@ Contents:
    pluginsystem/index
    schemas/index
    themesystem
-   checklists/index
 
+.. include:: globals.rst
 
 
 
