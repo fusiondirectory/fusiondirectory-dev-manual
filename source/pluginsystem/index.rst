@@ -12,3 +12,4 @@ You can write plugins for FusionDirectory using our simplePlugin class.
    plinfo
    attributes
    configbackend
+   menusections
