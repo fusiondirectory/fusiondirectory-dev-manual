@@ -16,42 +16,42 @@ There are some attributes that you can set in your class or in your constructor 
 custom template
 ^^^^^^^^^^^^^^^
 By default simplePlugin does a template for you, but if you want to add some elements to the template, or just render the sections in a different order, or that kind of things, here's what to do:
-Change **templatePath** value to your custom template path (usually in the constructor, using get_template_path).\\
+Change **templatePath** value to your custom template path (usually in the constructor, using get_template_path).
 
-In your template, you'll be able to use the $sections array that contains each section render.\\
-For instance:\\
+In your template, you'll be able to use the **$sections** array that contains each section render.
+For instance:
 
-.. code-block::
+.. code-block:: smarty
 
     <h1>Hello world!</h1>
     <div class="plugin_sections">
         {$sections.section1}
         {$sections.Mysection}
     </div>
-    
+
     <input name="{$hiddenPostedInput}" value="1" type="hidden"/>
-    
+
     <!-- Place cursor -->
     <script language="JavaScript" type="text/javascript">
       <!-- // First input field on page
         focus_field('{$focusedField}');
       -->
     </script>
-    
-You need to add the hidden input at the end in order for the POST analysis to work.\\
+
+You need to add the **hidden** input at the end in order for the POST analysis to work.
 The script is needed if you want the auto-focusing of first field to work.
 
-simplePlugin attributes values and methods 
+simplePlugin attributes values and methods
 ------------------------------------------
 
 In all of these methods, you can access the attributes by using **$this->attributesAccess** as follows:
     $this->attributesAccess['attributeldapname']
-    
-Don't forget to look at the documentation of the Attribute classes to know who to use them. 
-For instance they offer a **setDisabled** method if you need to disable some of them, **hasChanged** 
-will allow you to know if an attribute has been modified, etc…\\
-You can also easily access their value using **$this->attributeldapname**. Be aware that 
-this is not a real class attribute, accessing it will call the **getValue** and **setValue** methods of the attribute. 
+
+Don't forget to look at the documentation of the Attribute classes to know who to use them.
+For instance they offer a **setDisabled** method if you need to disable some of them, **hasChanged**
+will allow you to know if an attribute has been modified, etc…
+You can also easily access their value using **$this->attributeldapname**. Be aware that
+this is not a real class attribute, accessing it will call the **getValue** and **setValue** methods of the attribute.
 That means you can't create reference to it or call method that needs references like the array ones (array_push, …).
 The [] operator for arrays do not work either.
 
@@ -75,7 +75,7 @@ You can change it, doing something that look like that:
       return $this->header;
     }
   }
-  
+
 You can fetch any template but usually **$this->templatePath** is used, just remember to add **$this->header** at the beginning if you activated the display header feature.
 
 Please avoid doing heavy things in the execute function as it is just the render function, it's not supposed to compute anything.
@@ -96,7 +96,7 @@ You can inherit it as follows:
       // your code goes here
     }
   }
-  
+
 ldap_save
 ^^^^^^^^^
 
@@ -154,12 +154,12 @@ An other method, often simpler, is to modify your attributes after being constru
   function __construct(&$config, $dn = NULL, $object = NULL)
   {
     parent::__construct($config, $dn, $object);
-  
+
     $array = array('node1','node2'); // some dummy array
     // After simplePlugin constructor, you must access attributes by their ldap name
     $this->attributesAccess['myattributeLdapName']->setChoices($array);
   }
-  
+
 is_this_account
 ^^^^^^^^^^^^^^^
 
@@ -194,7 +194,7 @@ Please don't touch the fieldset, legend and table, just replace the foreach by w
 You need to use the attributes array, which contain for each attribute, indexed by its ldap name, its label and its input html code.
 For instance, for the above section, doing the following would have the same result than the default template:
 
-.. code-block::
+.. code-block:: smarty
 
     <fieldset id="{$sectionId}" class="plugin_section{$sectionClasses}">
       <legend>{$section}</legend>
@@ -211,7 +211,7 @@ You need to use 'eval' for label and HTML input as it contains some smarty code 
 Managed attributes
 ------------------
 
-In some case you want some attributes to be enabled/disabled depending on a checkbox or select state.\\
+In some case you want some attributes to be enabled/disabled depending on a checkbox or select state.
 For this, you can use the **setManagedAttributes** method as follow:
 
 .. code-block:: php
@@ -226,7 +226,7 @@ For this, you can use the **setManagedAttributes** method as follow:
         )
       )
     );
-    
+
 'disable' means that the attributes will be disabled but still saved into the LDAP.
 you can use 'erase' instead if you want those to be remove from the LDAP.
 FALSE means that when the value is FALSE, they'll be disabled.
@@ -249,5 +249,5 @@ You can also use this method with selectattributes:
         )
       )
     );
-    
+
 Note the **multiplevalues** special key in order to specify several values that disable the same attributes.
