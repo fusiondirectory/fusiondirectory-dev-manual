@@ -11,3 +11,5 @@ You can write plugins for FusionDirectory using our simplePlugin class.
    further
    plinfo
    attributes
+   configbackend
+   menusections
