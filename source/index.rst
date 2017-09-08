@@ -18,6 +18,7 @@ Contents:
 
    coding/index
    pluginsystem/index
+   api/index
    schemas/index
    themes/index
    release/index
