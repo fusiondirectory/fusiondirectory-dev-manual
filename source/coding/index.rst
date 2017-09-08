@@ -6,3 +6,5 @@ Coding Standards
 
    sourcecode
    codingstandards
+   copyright
+
