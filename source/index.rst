@@ -21,6 +21,7 @@ Contents:
    pluginsystem/index
    schemas/index
    themesystem
+   release/index
 
 .. include:: globals.rst
 
