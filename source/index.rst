@@ -16,22 +16,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   sourcecode
-   codingstandards
+   coding/index
    pluginsystem/index
    schemas/index
-   themesystem
+   themes/index
    release/index
-   license.rst
+   license/index
 
 .. include:: globals.rst
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

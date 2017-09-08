@@ -1,5 +1,5 @@
-Writing a plugin for FusionDirectory
-====================================
+Writing a plugin 
+================
 
 You can write plugins for FusionDirectory using our simplePlugin class.
 
