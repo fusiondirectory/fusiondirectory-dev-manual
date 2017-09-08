@@ -22,6 +22,7 @@ Contents:
    schemas/index
    themesystem
    release/index
+   license.rst
 
 .. include:: globals.rst
 
