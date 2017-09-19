@@ -33,7 +33,7 @@ Indentation and line length
 
 As a basic style rule, please use 2 spaces instead of tabulators. This will remove problems when using "diff".
 
-.. note:: 
+.. note::
 
   For VI users, this can be achieved by the following settings:
 
@@ -58,7 +58,7 @@ Use a space before affectations, around operators, before parenthesis or braces.
   $b = $value[0];
 
   // Readability
-  if ($b + 5 > foo (bar () + 4)) {
+  if ($b + 5 > foo(bar() + 4)) {
   }
 
 
@@ -83,7 +83,7 @@ Always use single spaces to split logical and mathematical operations:
 .. code-block:: php
 
   <?php
-  if ($a > 6 && $b == 17 && (foo ($b) < 1)) {
+  if ($a > 6 && $b == 17 && (foo($b) < 1)) {
   }
 
 
@@ -96,14 +96,14 @@ If statements with or without else clauses are formatted like this:
 
   <?php
   if ($value) {
-    foo ();
-    bar ();
+    foo();
+    bar();
   }
 
   if ($value) {
-    foo ();
+    foo();
   } else {
-    bar ();
+    bar();
   }
 
 Switches are formatted like this:
@@ -152,7 +152,7 @@ Always use camel casing with lowercase characters in the beginning for multiword
   <?php
   function checkForValidity ()
   {
-    $testSucceeded = false;
+    $testSucceeded = FALSE;
     ...
   }
 
@@ -175,9 +175,9 @@ Find short function names that describe what the function does, in order to make
 .. code-block:: php
 
   <?php
-  if ( configReadable ("/etc/foo.conf") ) {
+  if (configReadable("/etc/foo.conf")) {
   }
-  
+
 Use uppercase for constants/defines and _ to separate if there is more than one word :
 
 .. code-block:: php
@@ -231,7 +231,6 @@ Quotes / double quotes
 ----------------------
 
 * You must use single quotes for indexes, constants declaration, translations, ...
-* Use double quote in translated strings
 * When you have to use tabulation character (``\t``), carriage return (``\n``) and so on, you should use double quotes.
 * For performances reasons since PHP7, you may avoid strings concatenation.
 
@@ -240,30 +239,30 @@ Examples:
 .. code-block:: php
 
    <?php
-   //for that one, you should use double, but this is at your option...
-   $a = "foo";
-   
+   //for that one, you should use single, but this is at your option...
+   $a = 'foo';
+
    //use double quotes here, for $foo to be interpreted
    //   => with double quotes, $a will be "Hello bar" if $foo = 'bar'
    //   => with single quotes, $a will be "Hello $foo"
    $a = "Hello $foo";
-   
+
    //use single quotes for array keys
-   $tab = [
+   $tab = array(
       'lastname'  => 'john',
       'firstname' => 'doe'
-   ];
-   
+   );
+
    //Do not use concatenation to optimize PHP7
    //note that you cannot use functions call in {}
    $a = "Hello {$tab['firstname']}";
-   
+
    //single quote translations
-   $str = __('My string to translate');
-   
+   $str = _('My string to translate');
+
    //Double quote for special characters
    $html = "<p>One paragraph</p>\n<p>Another one</p>";
-   
+
    //single quote cases
    switch ($a) {
       case 'foo' : //use single quote here
@@ -277,10 +276,6 @@ Files Format
 ------------
 
 * UTF-8, LF - not CR LF
-* Name in lower case.
-* Maximum line length: 80 characters
-* Indentation: 2 spaces
-
 
 Checking standards
 ------------------
