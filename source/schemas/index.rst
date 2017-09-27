@@ -9,3 +9,4 @@ If your plugin needs a new schema or stores data in config back-end, the followi
    schemaname
    numberrules
    namerules
+   iana
