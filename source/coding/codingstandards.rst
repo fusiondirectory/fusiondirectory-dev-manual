@@ -1,5 +1,5 @@
-Coding standards
-================
+Coding Style
+============
 
 Scope of style guidelines
 -------------------------
