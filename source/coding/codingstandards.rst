@@ -280,11 +280,19 @@ Files Format
 Checking standards
 ------------------
 
-In order to check some standards are respected, we provide some custom `PHP CodeSniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ rules. From the fusiondirectory root directory, just run:
+In order to check some standards are respected, we provide some custom `PHP CodeSniffer <http://pear.php.net/package/PHP_CodeSniffer>`_ rules.
+
+First clone the dev-tools that contains Fusiondirectory developement tools
 
 .. code-block:: bash
 
-   phpcs --standard=../fusiondirectory-plugins/developers/FDStandard/ruleset.xml include
+    git clone https://gitlab.fusiondirectory.org/fusiondirectory/dev-tools.git
+
+Then run the codesniffer rules from the top directory:
+
+.. code-block:: bash
+
+    find . -type f -name '*.php' -o -name '*.inc' -exec phpcs --standard=../dev-tools/php-codesniffer-rules/FDStandard/ruleset.xml "{}" \;
 
 If the above command does not provide any output, then, all is OK :)
 
