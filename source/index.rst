@@ -24,6 +24,7 @@ Contents:
    themes/index
    translate/index
    release/index
+   support/index
    license/index
 
 .. include:: globals.rst
