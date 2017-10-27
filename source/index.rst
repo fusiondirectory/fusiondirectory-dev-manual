@@ -22,6 +22,7 @@ Contents:
    api/index
    schemas/index
    themes/index
+   translate/index
    release/index
    license/index
 
