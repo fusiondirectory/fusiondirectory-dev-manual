@@ -99,6 +99,7 @@ audit-fd-conf.schema                  61
 core-fd.schema                        62
 renater-partage-fd.schema             63
 sympa-fd-conf.schema                  64
+sinaps-fd-conf.schema                 65
 ===================================== =====================
 
 ===================================== =====================
