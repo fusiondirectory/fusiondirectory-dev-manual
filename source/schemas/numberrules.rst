@@ -101,6 +101,10 @@ renater-partage-fd.schema             63
 sympa-fd-conf.schema                  64
 sinaps-fd-conf.schema                 65
 supann-ext-fd.schema                  66
+public-forms-fd.schema                67
+public-forms-fd-conf.schema           68
+invitations-fd.schema                 69
+invitations-fd-conf.schema            70
 ===================================== =====================
 
 ===================================== =====================
