@@ -105,6 +105,8 @@ public-forms-fd.schema                67
 public-forms-fd-conf.schema           68
 invitations-fd.schema                 69
 invitations-fd-conf.schema            70
+seafile-fd.schema                     71
+seafile-fd-conf.schema                72 (temporary waiting for confirmation)
 ===================================== =====================
 
 ===================================== =====================
