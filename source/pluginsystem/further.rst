@@ -106,11 +106,17 @@ You can inherit it and do some additionnal LDAP modifications when saving:
 .. code-block:: php
 
   <?php
-  function ldap_save($cleanup = TRUE)
+  function ldap_save()
   {
-    parent::ldap_save($cleanup);
+    $errors = parent::ldap_save();
+
+    if (!empty($errors)) {
+      return $errors;
+    }
 
     // your code goes here
+
+    return $errors;
   }
 
 prepare_save
@@ -133,17 +139,17 @@ __construct
 ^^^^^^^^^^^
 
 Of course, there is always the possibility to have your own constructor, just remember to call the parent one at the end.
-The simple plugin constructor have a 4th optional parameter which is the attributes information. If you don't give it, the **getAttributesInfo** static function will be used.
+The simple plugin constructor have a 3rd optional parameter which is the attributes information. If you don't give it, the **getAttributesInfo** static function will be used.
 So you can do the following:
 
 .. code-block:: php
 
   <?php
-  function __construct(&$config, $dn = NULL, $object = NULL)
+  function __construct($dn = NULL, $object = NULL)
   {
     $attributesInfo = self::getAttributesInfo();
     // some modifications on $attributesInfo
-    parent::__construct($config, $dn, $object, $attributesInfo);
+    parent::__construct($dn, $object, $attributesInfo);
   }
 
 An other method, often simpler, is to modify your attributes after being constructed. You can't do that for all modifications but for common cases like SelectAttribute choices modification, it's what you should do:
@@ -151,9 +157,9 @@ An other method, often simpler, is to modify your attributes after being constru
 .. code-block:: php
 
   <?php
-  function __construct(&$config, $dn = NULL, $object = NULL)
+  function __construct($dn = NULL, $object = NULL)
   {
-    parent::__construct($config, $dn, $object);
+    parent::__construct($dn, $object);
 
     $array = array('node1','node2'); // some dummy array
     // After simplePlugin constructor, you must access attributes by their ldap name
