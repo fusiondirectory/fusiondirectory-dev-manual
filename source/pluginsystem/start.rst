@@ -22,10 +22,10 @@ Your plugin should have a *main.inc* file if you intend it to display on its own
 Icons
 -----
 
-If your plugin packs some icons, they need to be placed in the default icon theme:
-*{fd-directory}/html/themes/default/icons/{size}/{category}*
+If your plugin packs some icons, they need to be placed in the breezy icon theme:
+*{fd-directory}/html/themes/breezy/icons/{size}/{category}*
 Most of the time your icons are those of an application and should therefore be placed in the *apps* folder, which is for the category *applications*.
-For instance if the small icon for apache goes in *{fd-directory}/html/themes/default/icons/16/apps/apache.png* and is used in the code as *geticon.php?context=applications&icon=apache&size=16*
+For instance if the small icon for apache goes in *{fd-directory}/html/themes/breezy/icons/16/apps/apache.png* and is used in the code as *geticon.php?context=applications&icon=apache&size=16*
 
 Basic plugin writing
 --------------------
