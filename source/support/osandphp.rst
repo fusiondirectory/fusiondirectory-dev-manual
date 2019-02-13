@@ -14,21 +14,11 @@ Server OSes
 PHP versions
 ============
 
-Fusiondirectory need at least PHP 5.6. 
+The version of PHP depend on the FusionDirectory version.
 
-PHP versions in RHEL and Centos are very old and are no longer supported by PHP itself
+Fusiondirectory need at least PHP 5.4.
 
-RHEL
-----
-
-We follow `rhscl <https://access.redhat.com/support/policy/updates/rhscl>`_ 
-
- * PHP 5.6 will be supported until April 2018 in RHSCL 2.04 
- * PHP 7.1 will be supported until Oct 2018 in RHSCL 3.0
-
-Centos
-------
-
-We follow `php56 <https://www.softwarecollections.org/en/scls/rhscl/rh-php56/>`_  and `php70 <https://www.softwarecollections.org/en/scls/rhscl/rh-php70/>`_
-
+ * Fusiondirectory 1.2.3 need PHP 5.4
+ * Fusiondirectory 1.3 need PHP 5.6 
+ * Fusiondirectory 1.4 need PHP 7.0
 
