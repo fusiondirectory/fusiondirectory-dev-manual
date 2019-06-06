@@ -1,21 +1,27 @@
 Fusiondirectory WebService
 ==========================
 
-FusionDirectory WebService plugin exposes a JSONRPC webservice you can use if you want to access LDAP content through FusionDirectory system.
-This way, you ensure that things like foreign keys are kept consistent, and you have a nicer API than the low-level LDAP one.
+FusionDirectory WebService plugin exposes a JSON RPC webservice that you can use if you want to access LDAP content through FusionDirectory system.
+This way, you ensure that your ldap objects are kept consistent, your are able to use the system templates and have restrictions applied by acls.
 
-It is a standard JSONRPC server served on HTTPS protocol. 
+On top of that you have a nicer API than the low-level LDAP one.
 
-Note that you can allow HTTP in plugin configuration, but please avoid doing so except for testing purposes.
+The `JSON RPC webservice methods are detailed here <http://api.fusiondirectory.org/classfdRPCService.html#details>`_.
 
-The `webservice methods are detailed here <http://api.fusiondirectory.org/classfdRPCService.html#details>`_.
+.. warning::
+
+  This API is deprecated in favour of the REST API coming in FusionDirectory 1.4.
+  So i will not evolve apart from eventual bugfixes
+
+.. warning::
+
+  Note that you can allow HTTP in plugin configuration, but please avoid doing this except for testing purposes.
 
 Basically you first need to call **login** to get a session ticket you’ll use in the other method calls you make.
 If you have several LDAP configured you might call **listLdaps** first to list them and specify which one to use as first parameter of **login** (otherwise just pass NULL as first parameter).
 
 Then you can use **ls** to list objects of a given type (list types with **listTypes** first if needed).
 **getfields** method will give you the fields of a given type (and tab) and **setfields** will allow you to change the value of these fields.
-
 
 .. code-block:: php
 
@@ -84,4 +90,3 @@ Then you can use **ls** to list objects of a given type (list types with **listT
   } catch (jsonRPCClient_NetworkErrorException $e) {
     die($e->getMessage());
   }
-
