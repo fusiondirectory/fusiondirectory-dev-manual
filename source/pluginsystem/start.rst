@@ -41,9 +41,6 @@ This is the code for an empty plugin:
     // we want it activated on all objects
     var $displayHeader = FALSE;
 
-    // Here we indicate which LDAP classes our plugin is using.
-    var $objectclasses = array('demoPlugin');
-
     // We need this function that returns some information about the plugin
     static function plInfo ()
     {
@@ -53,6 +50,7 @@ This is the code for an empty plugin:
         'plDescription'     => _('Edit some useless personal information'),
         'plSelfModify'      => TRUE, // Does this plugin have an owner that might be able to edit its entry
         'plObjectType'      => array('user'),
+        'plObjectClass'     => array('demoPlugin'),
 
         // simplePlugin can generate the ACL list for us
         'plProvidedAcls'    => parent::generatePlProvidedAcls(self::getAttributesInfo())

@@ -28,6 +28,9 @@ This static method returns an array containing keys from the following table. So
     plProvidedAcls, "Array of acls",                See full documentation below , empty
     plForeignKeys,  "Array of foreign keys",        See full documentation below , empty
     plManages,      "Array of managed objectTypes (only for management classes)", Used to create links to objects of these types, empty
+    plFilter,       "LDAP filter",                  "Used to test if the tab is active", "Generated from plObjectClass"
+    plObjectClass,  "Array of objectClasses",       These objectClasses are added when the tab is saved, empty
+    plSearchAttrs,  "Array of attributes",          "Used in management classes for text search", empty
 
 plSection
 ---------
@@ -43,7 +46,7 @@ You can also create a new menu section in this attribute using the following syn
 
     <?php
     array('mysection' => array('name' => _('My section'), 'priority' => 100))
-    
+
 Replace *mysection* with a lowercase id for your section and *My section* with the name to display in the menu.
 
 The existing sections are:
@@ -72,7 +75,7 @@ ObjectType definition is an array containing the following keys:
 
     name,           Displayable name for this object type,              **mandatory**
     description,    Displayable description for this object type,       **mandatory**
-    filter,         LDAP filter to find objects of this type,           **mandatory**
+    filter,         LDAP filter to find objects of this type,           value of plFilter
     mainAttr,       LDAP attribute to use in dn,                        cn
     nameAttr,       LDAP attribute to use in object links,              *mainAttr*
     tabClass,       PHP class to use for tab handling,                  simpleTabs
@@ -89,11 +92,11 @@ For instance, this is the plObjectType of the user class:
   <?php
   'plObjectType'  => array(
     'user' => array(
-      'description' => _('Users'),
       'name'        => _('User'),
-      'filter'      => 'objectClass=gosaAccount',
-      'mainAttr'    => 'cn',
-      'icon'        => 'geticon.php?context=types&amp;icon=user&amp;size=16',
+      'description' => _('User account'),
+      'mainAttr'    => 'uid',
+      'nameAttr'    => 'cn',
+      'icon'        => 'geticon.php?context=types&icon=user&size=16',
       'ou'          => get_ou('userRDN'),
     )
   ),
@@ -143,9 +146,9 @@ If you do need to specify ACL categories, you can create an acl category by spec
     <?php
     'plCategory' => array(
         'acl' => array(
-            'description'  => _('ACL'), 
+            'description'  => _('ACL'),
             'objectClass'  => array('gosaAcl','gosaRole')
         )
      ),
-     
+
 An ACL category only contains a description and a list of LDAP objectClasses (for some historical reason)
