@@ -41,29 +41,27 @@ This is the code for an empty plugin:
     // we want it activated on all objects
     var $displayHeader = FALSE;
 
-    // Here we indicate which LDAP classes our plugin is using.
-    var $objectclasses = array('demoPlugin');
-
     // We need this function that returns some information about the plugin
-    static function plInfo ()
+    static function plInfo (): array
     {
-      return array(
+      return [
         'plShortName'       => _('Demo Plugin'),
         'plTitle'           => _('Demo Plugin informations'),
         'plDescription'     => _('Edit some useless personal information'),
         'plSelfModify'      => TRUE, // Does this plugin have an owner that might be able to edit its entry
-        'plObjectType'      => array('user'),
+        'plObjectType'      => ['user'],
+        'plObjectClass'     => ['demoPlugin'],
 
         // simplePlugin can generate the ACL list for us
         'plProvidedAcls'    => parent::generatePlProvidedAcls(self::getAttributesInfo())
-      );
+      ];
     }
 
     // The main function : information about attributes
-    static function getAttributesInfo ()
+    static function getAttributesInfo (): array
     {
-      return array(
-      );
+      return [
+      ];
     }
   }
 
@@ -94,20 +92,20 @@ Example
   // The main function : information about attributes
   static function getAttributesInfo ()
   {
-    return array(
+    return [
       // Attributes are grouped by section
-      'section1' => array(
+      'section1' => [
         'name'  => _('Hair Information'),
-        'attrs' => array(
-          new SetAttribute(                 // This attribute is multi-valuated
+        'attrs' => [
+          new SetAttribute(                   // This attribute is multi-valuated
             new SelectAttribute (
               _('Color'),                     // Label of the attribute
               _('Color of the hair'),         // Description
               'hairColor',                    // LDAP name
               TRUE,                           // Mandatory
-              array('blond','black','brown'), // [SelectAttribute] Choices
-              "", // We don't set any default value, it will be the first one
-              array('Blond','Black','Brown')  // [SelectAttribute] Output choices
+              ['blond','black','brown'],      // [SelectAttribute] Choices
+              '', // We don't set any default value, it will be the first one
+              ['Blond','Black','Brown']       // [SelectAttribute] Output choices
             )
           ),
           new FloatAttribute  (
@@ -119,11 +117,11 @@ Example
             FALSE,                          // [FloatAttribute] No maximum value
             10                              // [FloatAttribute] Default value
           ),
-        )
-      ),
-      'section2' => array(
+        ]
+      ],
+      'section2' => [
         'name'  => _('Bicycle'),
-        'attrs' => array(
+        'attrs' => [
           new StringAttribute (
             _('Brand'),                     // Label
             _('Brand of the bicycle'),      // Description
@@ -138,26 +136,26 @@ Example
             FALSE,                              // Not mandatory
             FALSE                               // Default value
           ),
-        )
-      ),
-      'ftp' => array(
+        ]
+      ],
+      'ftp' => [
         'name'  => _('FTP informations'),
-        'attrs' => array(
+        'attrs' => [
           new CompositeAttribute (
             _('Informations for ftp login'),
             'ftpLoginInfo',
-            array(
+            [
               new StringAttribute (_('Login'),    _('Login for FTP'),     'ftpLogin'),
               new StringAttribute (_('Password'), _('Password for FTP'),  'ftpPassword'),
               new StringAttribute (_('Host'),     _('Host for FTP'),      'ftpHost'),
               new IntAttribute    (_('Port'),     _('Port for FTP'),      'ftpPort', FALSE, 0, FALSE, 21),
-            ),
+            ],
             'ftp://%[^@:]:%[^@:]@%[^@:]:%d',    // scanf format
             'ftp://%s:%s@%s:%d'                 // printf format
           )
-        )
-      ),
-    );
+        ]
+      ],
+    ];
   }
 
 As you can see, attribute constructor take 5 arguments being label, description,

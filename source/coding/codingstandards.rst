@@ -192,7 +192,7 @@ Use uppercase for constants/defines and _ to separate if there is more than one 
 Arrays
 ------
 
-Arrays must be declared using the long notation syntax (``array()``).
+Arrays must be declared using the short syntax (``[]``).
 
 
 PHP specific
@@ -248,10 +248,10 @@ Examples:
    $a = "Hello $foo";
 
    //use single quotes for array keys
-   $tab = array(
+   $tab = [
       'lastname'  => 'john',
-      'firstname' => 'doe'
-   );
+      'firstname' => 'doe',
+   ];
 
    //Do not use concatenation to optimize PHP7
    //note that you cannot use functions call in {}
