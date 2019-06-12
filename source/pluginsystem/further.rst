@@ -166,7 +166,7 @@ An other method, often simpler, is to modify your attributes after being constru
   {
     parent::__construct($dn, $object, $parent, $mainTab, $attributesInfo);
 
-    $array = array('node1','node2'); // some dummy array
+    $array = ['node1','node2']; // some dummy array
     // After simplePlugin constructor, you must access attributes by their ldap name
     $this->attributesAccess['myattributeLdapName']->setChoices($array);
   }
@@ -190,14 +190,14 @@ It's quite easy to do, all you have to do is adding a 'template' key to the sect
 
 .. code-block:: php
 
-      'my_section' => array(
+      'my_section' => [
         'name'  => _('Great Section'),
-        'attrs' => array(
+        'attrs' => [
           new StringAttribute (_('Something'), _('This attribute does nothing'), 'someThing', FALSE, 'DefaultValue'),
           // other attributes…
-        ),
+        ],
         'template' => get_template_path('my_section_template.tpl', TRUE, dirname(__FILE__))
-      ),
+      ],
 
 You need to use get_template_path as above in order to get an absolute path for the tpl file.
 In this template file, you need to copy simpleplugin_section.tpl, the default template.
@@ -228,14 +228,14 @@ For this, you can use the **setManagedAttributes** method as follow:
 .. code-block:: php
 
     $this->attributesAccess['boolean']->setManagedAttributes(
-      array(
-        'disable' => array (
-          FALSE => array (
+      [
+        'disable' => [
+          FALSE => [
             'attribute1',
             'attribute2',
-          )
-        )
-      )
+          ]
+        ]
+      ]
     );
 
 'disable' means that the attributes will be disabled but still saved into the LDAP.
@@ -246,19 +246,19 @@ You can also use this method with selectattributes:
 .. code-block:: php
 
     $this->attributesAccess['select']->setManagedAttributes(
-      array(
-        'multiplevalues' => array ('darkcolors' => array('blue','black')),
-        'erase' => array (
-          'darkcolors' => array (
+      [
+        'multiplevalues' => ['darkcolors' => ['blue','black']],
+        'erase' => [
+          'darkcolors' => [
             'attribute1',
             'attribute2',
-          ),
-          'yellow' => array (
+          ],
+          'yellow' => [
             'attribute3',
             'attribute4',
-          ),
-        )
-      )
+          ],
+        ]
+      ]
     );
 
 Note the **multiplevalues** special key in order to specify several values that disable the same attributes.

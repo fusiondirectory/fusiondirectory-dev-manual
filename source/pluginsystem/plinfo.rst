@@ -45,7 +45,7 @@ You can also create a new menu section in this attribute using the following syn
 .. code-block:: php
 
     <?php
-    array('mysection' => array('name' => _('My section'), 'priority' => 100))
+    ['mysection' => ['name' => _('My section'), 'priority' => 100]]
 
 Replace *mysection* with a lowercase id for your section and *My section* with the name to display in the menu.
 
@@ -90,16 +90,16 @@ For instance, this is the plObjectType of the user class:
 .. code-block:: php
 
   <?php
-  'plObjectType'  => array(
-    'user' => array(
+  'plObjectType'  => [
+    'user' => [
       'name'        => _('User'),
       'description' => _('User account'),
       'mainAttr'    => 'uid',
       'nameAttr'    => 'cn',
       'icon'        => 'geticon.php?context=types&icon=user&size=16',
       'ou'          => get_ou('userRDN'),
-    )
-  ),
+    ]
+  ],
 
 plForeignKeys
 -------------
@@ -112,20 +112,20 @@ The syntax for this is:
 .. code-block:: php
 
   <?php
-  'plForeignKeys'  => array(
-    'myfield' => array(
-      array('class', 'hisfield', 'filter'),
-    )
-  )
+  'plForeignKeys'  => [
+    'myfield' => [
+      ['class', 'hisfield', 'filter'],
+    ]
+  ],
 
 But you can omit *filter* most of the time (defaults to '*myfield*=%oldvalue%') and *hisfield* if it is the *dn*, and if there is only one field you are referring to you can omit the array, so for our department example this gives us:
 
 .. code-block:: php
 
   <?php
-  'plForeignKeys'  => array(
+  'plForeignKeys'  => [
     'manager' => 'user'
-  )
+  ]
 
 Which is pretty straight forward.
 
@@ -144,11 +144,11 @@ If you do need to specify ACL categories, you can create an acl category by spec
 .. code-block:: php
 
     <?php
-    'plCategory' => array(
-        'acl' => array(
-            'description'  => _('ACL'),
-            'objectClass'  => array('gosaAcl','gosaRole')
-        )
-     ),
+    'plCategory' => [
+      'acl' => [
+        'description'  => _('ACL'),
+        'objectClass'  => ['gosaAcl','gosaRole']
+      ]
+    ],
 
 An ACL category only contains a description and a list of LDAP objectClasses (for some historical reason)
