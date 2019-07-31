@@ -6,7 +6,7 @@ This way, you ensure that your ldap objects are kept consistent, your are able t
 
 On top of that you have a nicer API than the low-level LDAP one.
 
-The `JSON RPC webservice methods are detailed here <http://api.fusiondirectory.org/classfdRPCService.html#details>`_.
+The `JSON RPC webservice methods are detailed here <https://api.fusiondirectory.org/classfdRPCService.html#details>`_.
 
 .. warning::
 
