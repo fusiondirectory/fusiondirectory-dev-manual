@@ -26,6 +26,7 @@ Contents:
    release/index
    support/index
    license/index
+   code-of-conduct.rst
 
 .. include:: globals.rst
 
