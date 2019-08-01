@@ -8,7 +8,7 @@ Server OSes
 
  * Debian: stable and oldstable
  * Ubuntu: the two latest LTS releases
- * Enterprise Linux (RHEL, CentOS, ...): two latest major releases
+ * Enterprise Linux (RHEL, CentOS, ...): the latest major release
 
 
 PHP versions
@@ -16,9 +16,8 @@ PHP versions
 
 The version of PHP depend on the FusionDirectory version.
 
-Fusiondirectory need at least PHP 5.4.
+Fusiondirectory need at least PHP 5.6.
 
- * Fusiondirectory 1.2.3 need PHP 5.4
  * Fusiondirectory 1.3 need PHP 5.6 
  * Fusiondirectory 1.4 need PHP 7.0
 
