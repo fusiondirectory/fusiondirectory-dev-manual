@@ -1,3 +1,5 @@
+.. _code-of-conduct-label:
+
 Code of Conduct
 ===============
 
