@@ -1,3 +1,5 @@
+.. _coding-style-label:
+
 Coding Style
 ============
 
@@ -276,6 +278,8 @@ Files Format
 ------------
 
 * UTF-8, LF - not CR LF
+
+.. _checking-standard-label:
 
 Checking standards
 ------------------
