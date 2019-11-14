@@ -107,6 +107,7 @@ invitations-fd.schema                 69
 invitations-fd-conf.schema            70
 seafile-fd.schema                     71
 seafile-fd-conf.schema                72 (temporary waiting for confirmation)
+webauthn-fd.schema                    73
 ===================================== =====================
 
 ===================================== =====================
