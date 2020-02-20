@@ -8,6 +8,7 @@ Guidelines for better contributions
 
    -  `Translate FusionDirectory in your
       language <#translate-fusiondirectory>`__
+   -  `Register for a FusionDirectory project account <#register-for-a-fusiondirectory-project-account>`__
    -  `Finding Wonderful Bugs <#finding-wonderful-bugs>`__
    -  `Any Feedback To Enhance Our
       Apps <#any-feedback-to-enhance-our-apps>`__
