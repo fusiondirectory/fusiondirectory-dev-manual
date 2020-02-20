@@ -1,9 +1,6 @@
 Guidelines for better contributions
 ===================================
 
-Table Of Contents
------------------
-
 #. `Welcome <#Welcome>`__
 #. `Code of Conduct <#code-of-conduct>`__
 #. `I just have a question! <#i-just-have-a-question>`__
@@ -33,7 +30,7 @@ Welcome
    practice, or think one of these guidelines should be removed, feel
    free to share it with us.»
 
-**First off, thanks for taking the time to contribute !**
+🎉 First off, thanks for taking the time to contribute!
 
 Now, sit comfortably at the fireplace, grab your glasses and immerse
 yourself in our documentation.
@@ -50,7 +47,9 @@ before.
 I just have a question!
 -----------------------
 
-   **Note:** Please don't file an issue to ask a question. You'll get
+.. note:: 
+   
+   Please don't file an issue to ask a question. You'll get
    faster results by using the resource below.
 
 We have an various channel of communications
@@ -67,13 +66,13 @@ How Can I Contribute?
 
 So, you've developed a new cool feature? Fixed an annoying bug? Found a
 mistake? Want to help translate FusionDirectory in your own language.
-We'd be happy to hear from you!
+We'd be happy to hear from you! 👍
 
 Translate FusionDirectory
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We are using
-`Transifex <https://www.transifex.com/fusiondirectory/FusionDirectory-1x/>`__
+`Transifex <https://www.transifex.com/fusiondirectory/>`__
 to translate FusionDirectory.
 
 -  Create a transifex account
@@ -95,6 +94,8 @@ Put FusionDirectory in debug mode
 
 Finding Wonderful Bugs
 ~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
 
    This section guides you through submitting a bug report. Following
    these guidelines helps maintainers and the community understand your
@@ -120,8 +121,8 @@ reproduce the problem:
 -  **Include screenshots and animated GIFs** which show you following
    the described steps and clearly demonstrate the problem. You can use
    `this tool <http://www.cockos.com/licecap/>`__ to record GIFs on
-   macOS and Windows, and this tool or `this
-   tool <https://github.com/GNOME/byzanz>`__ on Linux.
+   macOS and Windows, and `this tool <https://github.com/colinkeenan/silentcast>`__ on Linux.
+   
 -  **Include the PHP errors and trace** collected at the debug step
    above
 -  **If the problem is linked to a specific LDAP entry** attach its LDAP
@@ -137,6 +138,8 @@ Fill in a report on :
 
 Any Feedback To Enhance FusionDirectory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
 
    This section guides you through submitting an enhancement suggestion,
    including completely new features and minor improvements to existing
@@ -164,13 +167,14 @@ faster.
    the steps which the suggestion is related to. You can use `this
    tool <http://www.cockos.com/licecap/>`__ to record GIFs on macOS and
    Windows, and `this
-   tool <https://github.com/colinkeenan/silentcast>`__ or `this
-   tool <https://github.com/GNOME/byzanz>`__ on Linux.
+   tool <https://github.com/colinkeenan/silentcast>`__ on Linux.
 -  **Explain why this enhancement would be useful** to most
    FusionDirectory users.
 
 Your awesome And Mighty Codes Contributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
 
    This section guides you through submitting an enhancement suggestion,
    including completely new features and minor improvements to existing
@@ -211,6 +215,8 @@ Coding with style
 
 Git Commit Messages
 ~~~~~~~~~~~~~~~~~~~
+
+.. note::
 
    Having a good guideline for creating commits and sticking to it makes
    working with Git and collaborating with others a lot easier.
@@ -259,12 +265,12 @@ The **header** is mandatory and the **scope** of the header is optional.
 
 Where type can be :
 
-* **feat**: A new feature
-* **fix**: A bug fix
-* **core**: Code for the Core
-* **docs**: Documenting the code or writing new documentation
-* **style**: Cosmetics purpose
-* **test**: Adding missing or correcting tests
+-  **feat**: A new feature
+-  **fix**: A bug fix
+-  **core**: Code for the Core
+-  **docs**: Documenting the code or writing new documentation
+-  **style**: Cosmetics purpose
+-  **test**: Adding missing or correcting tests
 
 Examples:
 
@@ -300,4 +306,4 @@ Guidelines <https://github.com/atom/atom/blob/master/CONTRIBUTING.md#reporting-b
 `Angularjs
 guidelines <https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md>`__.
 
-With love :heart:
+With love ❤️
