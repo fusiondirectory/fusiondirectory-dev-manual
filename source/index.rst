@@ -16,7 +16,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   contribute/index
+   contribute/guidelines.rst
    coding/index
    pluginsystem/index
    api/index
