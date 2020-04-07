@@ -112,6 +112,8 @@ webauthn-fd-conf.schema               74
 totp-fd.schema                        75
 totp-fd-conf.schema                   76
 autofs5-fd-conf.schema                77
+ipam-fd.schema                        78
+ipam-fd-conf.schema                   79
 ===================================== =====================
 
 ===================================== =====================
