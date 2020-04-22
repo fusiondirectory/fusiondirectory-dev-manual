@@ -17,8 +17,6 @@ Plugins adding a service should go into *{fd-directory}/plugins/admin/systems/se
 
 Your main file should be named *class_MyPluginClass.inc*.
 
-Your plugin should have a *main.inc* file if you intend it to display on its own (not as a tab of an other object).
-
 Icons
 -----
 
@@ -174,15 +172,3 @@ A tab should now shows in user edition mode, with the attributes we specified:
 
 .. image:: /_static/images/demoplugin.png
 
-Displaying the plugin in the "My account" menu
-----------------------------------------------
-
-You may also want the plugin to show in the "My Account" menu, if your plugin is for users and you've set plModifySelf to TRUE.
-For this, you need your plugin to have a main.inc PHP file.
-Just put this in it:
-
-.. code-block:: php
-
-    <?php
-        simplePlugin::mainInc('demoPlugin', $ui->dn);
-    ?>
