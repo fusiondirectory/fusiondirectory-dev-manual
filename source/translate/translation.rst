@@ -1,5 +1,5 @@
-Translate FusionDirectory
-=========================
+Translation
+===========
 
 We are using `Transifex <https://www.transifex.com/fusiondirectory/>`_
 

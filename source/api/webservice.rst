@@ -10,5 +10,5 @@ The REST API is documented `here <http://rest.fusiondirectory.org>`_.
 
 .. note::
 
-Note that you can allow HTTP in plugin configuration, but please avoid doing this except for testing purposes.
+   Note that you can allow HTTP in plugin configuration, but please avoid doing this except for testing purposes.
 
