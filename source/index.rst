@@ -22,12 +22,11 @@ Contents:
    api/index
    schemas/index
    themes/index
-   translate/index
+   translate/translation.rst
    release/index
    support/index
-   license/index
+   license/license.rst
    code-of-conduct.rst
 
 .. include:: globals.rst
-
 
