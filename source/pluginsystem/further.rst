@@ -54,19 +54,19 @@ this is not a real class attribute, accessing it will call the **getValue** and 
 That means you can't create reference to it or call method that needs references like the array ones (array_push, …).
 The [] operator for arrays do not work either.
 
-execute
-^^^^^^^
+render
+^^^^^^
 
-This method is the one that render the plugin.
+This method is the one that renders the plugin.
 You can change it, doing something that look like that:
 
 .. code-block:: php
 
   <?php
-  function execute ()
+  public function render (): string
   {
     $smarty = get_smarty();
-    parent::execute();
+    parent::render();
     // your code goes here
     if ($this->displayPlugin) {
       return $this->header.$smarty->fetch($this->templatePath);
@@ -77,10 +77,10 @@ You can change it, doing something that look like that:
 
 You can fetch any template but usually **$this->templatePath** is used, just remember to add **$this->header** at the beginning if you activated the display header feature.
 
-Please avoid doing heavy things in the execute function as it is just the render function, it's not supposed to compute anything.
+Please avoid doing heavy things in the render function as it is just the render function, it's not supposed to compute anything (see update_).
 
-save_object
-^^^^^^^^^^^
+readPost
+^^^^^^^^
 
 This function analyse the POST informations.
 You can inherit it as follows:
@@ -88,12 +88,27 @@ You can inherit it as follows:
 .. code-block:: php
 
   <?php
-  function save_object ()
+  public function readPost ()
   {
-    parent::save_object();
-    if (isset($_POST[get_class($this)."_posted"])) {
+    parent::readPost();
+    if (isset($_POST[get_class($this).'_posted'])) {
       // your code goes here
     }
+  }
+
+update
+^^^^^^
+
+This function updates the plugin state after variables modifications (from readPost_ or from external modifications like webservice or a template) and before rendering. It returns a boolean which indicates if the dialog is still open, in the case of plugin tabs it should always return TRUE.
+
+.. code-block:: php
+
+  <?php
+  public function update (): bool
+  {
+    parent::update();
+    // your code goes here
+    return TRUE;
   }
 
 ldap_save
