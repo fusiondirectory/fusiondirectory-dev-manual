@@ -115,6 +115,8 @@ autofs5-fd-conf.schema                77
 ipam-fd.schema                        78
 ipam-fd-conf.schema                   79
 nextcloud-fd.schema                   80
+archive-fd.schema                     81
+archive-fd-conf.schema                82
 ===================================== =====================
 
 ===================================== =====================
