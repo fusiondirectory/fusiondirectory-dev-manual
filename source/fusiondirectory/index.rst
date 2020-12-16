@@ -11,6 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   whatis/fusiondirectory.rst
+   prerequisite/prerequisite.rst
+   distribution/certified-distribution.rst
    contribute/guidelines.rst
    coding/index
    pluginsystem/index
