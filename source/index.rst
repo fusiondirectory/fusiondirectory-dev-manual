@@ -17,6 +17,9 @@ Contents:
    :maxdepth: 2
 
    fusiondirectory/index.rst
+   support/index.rst
+   security/index.rst
+   contact/contact.rst
    code-of-conduct.rst
 
 .. include:: globals.rst
