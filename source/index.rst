@@ -24,7 +24,6 @@ Contents:
    themes/index
    translate/translation.rst
    release/index
-   support/index
    license/license.rst
    code-of-conduct.rst
 
