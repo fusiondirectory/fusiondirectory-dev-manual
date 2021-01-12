@@ -117,6 +117,7 @@ ipam-fd-conf.schema                   79
 nextcloud-fd.schema                   80
 archive-fd.schema                     81
 archive-fd-conf.schema                82
+zimbra-fd.schema                      83
 ===================================== =====================
 
 ===================================== =====================
