@@ -120,6 +120,7 @@ archive-fd-conf.schema                82
 zimbra-fd.schema                      83
 subscriptions-fd.schema               84
 subscriptions-fd-conf.schema          85
+zimbra-fd-conf.schema                 86
 ===================================== =====================
 
 ===================================== =====================
