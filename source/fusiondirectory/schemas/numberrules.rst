@@ -121,6 +121,7 @@ zimbra-fd.schema                      83
 subscriptions-fd.schema               84
 subscriptions-fd-conf.schema          85
 zimbra-fd-conf.schema                 86
+mailinblack-fd.schema                 87
 ===================================== =====================
 
 ===================================== =====================
