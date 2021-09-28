@@ -4,6 +4,16 @@
 This library aim to contain an easy to use object oriented interface to bind to an LDAP server and send requests to it.
 It also contains a few helpers related to LDAP protocol.
 
+Requirements
+------------
+
+This library needs PHP 7.3 or newer.
+
+Installation
+------------
+
+You must put the src/FusionDirectory folder in the include_path of your PHP configuration.
+
 Example
 -------
 
@@ -46,6 +56,7 @@ Example
         'ou' => 'entry'
       ]
     );
+    /* Throw Ldap\Exception if the add operation returned an error */
     $add->assert();
 
 Other useful helpers
