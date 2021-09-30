@@ -23,4 +23,5 @@ Contents:
    translate/translation.rst
    release/index
    license/license.rst
+   libraries/index
 
