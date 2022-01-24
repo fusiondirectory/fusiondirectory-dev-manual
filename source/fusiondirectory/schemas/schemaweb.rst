@@ -10,4 +10,4 @@ Those criteria are :
  * Release
  * Schemas
 
-The application is available on `Schema <https://schemas.fusiondirectory.info/>`_
+The application is available on `Schema <https://schemas.fusiondirectory.org/>`_
