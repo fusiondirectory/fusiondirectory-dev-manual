@@ -3,7 +3,7 @@ Menu sections
 
 Here are the existing menu sections and examples of priorities they use, so that you can select which priority you give your menu entry.
 
-Users and groups (accounts) - 0-9
+Users and groups (accounts)
 ---------------------------
 
 * Departments - 0-9
@@ -32,7 +32,7 @@ Users and groups (accounts) - 0-9
   * Password Policies - 57
   * Applications - 60
 
-Systems (systems) - 10-19
+Systems (systems)
 -----------------
 
 * Systems - 0-19
@@ -55,7 +55,7 @@ Systems (systems) - 10-19
   * Samba domains - 40
   * SOGo - 50
 
-Configuration (conf) 20-29
+Configuration (conf)
 --------------------
 
 * Configuration - 0-9
@@ -73,7 +73,7 @@ Configuration (conf) 20-29
 
   * Mail Tasks - 31
 
-Reporting (reporting) 30-39
+Reporting (reporting)
 ---------------------
 
 * Dashboard - 0
