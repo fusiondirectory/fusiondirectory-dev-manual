@@ -69,6 +69,10 @@ Configuration (conf)
   * LDAP import/export - 10
   * OPSI import - 15
 
+* Mail Templates - 30-39
+
+  * Mail Tasks - 31
+
 Reporting (reporting)
 ---------------------
 
