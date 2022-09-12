@@ -17,6 +17,7 @@ Contents:
    :maxdepth: 2
 
    fusiondirectory/index.rst
+   development/index.rst
    marketplace/index.rst
    releasing/index.rst
    support/index.rst
