@@ -2,7 +2,7 @@ New ticket opened
 =================
 
 First the label of the dolibarr project should be added to it.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dolibarr label are made like this : **PJYYYY**-project number
 
@@ -21,8 +21,13 @@ We have some basic project number that should always be used by default if there
 
 -  Dev Manual : **PJ2003-0343**
 
+.. warning::
+
+   if the label doesnt exist it need to be created at the group level
+   for exemple : `Group Label`_
+
 Second the component where the bug/enhancement is to be made should be specified
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Example : fusiondirectory-core or plugin-xxx
 
@@ -74,8 +79,8 @@ if the change need a change in packaging
 
 -  The packaging ticket are linked back with the code fix ticket
 
-The bug is closed
------------------
+Ticket need to be closed
+========================
 
 -  Remove the **to be tested** label, and add one of the changelog label
    to specify what has been done.
@@ -95,3 +100,4 @@ version something has been changed and what the type of change it was
 .. _Debian Packaging : https://gitlab.fusiondirectory.org/debian
 .. _Centos Packaging : https://gitlab.fusiondirectory.org/centos
 .. _Ubuntu Packaging : https://gitlab.fusiondirectory.org/ubuntu
+.. _Group Label : https://gitlab.fusiondirectory.org/groups/fusiondirectory/-/labels
