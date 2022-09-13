@@ -17,47 +17,104 @@ You must put the src/FusionDirectory folder in the include_path of your PHP conf
 Example
 -------
 
+- Connect and bind to LDAP as external
+
 .. code-block:: php
 
   <?php
     require 'FusionDirectory/Ldap/autoload.php';
 
     use \FusionDirectory\Ldap;
-
     /* Open a connection */
-    $link = new Ldap\Link('ldapi:///');
+    $ldap = new Ldap\Link('ldapi:///');
+
+    /* External bind */
+    $ldap->saslBind('', '', 'EXTERNAL');
+
+- Connect and bind to LDAP as user
+
+.. code-block:: php
+
+  <?php
+    require 'FusionDirectory/Ldap/autoload.php';
+
+    use \FusionDirectory\Ldap;
+    /* Open a connection */
+    $ldap = new Ldap\Link('ldap://localhost:389/');
+    
     /* Simple bind */
-    $link->bind('cn=admin,dc=base', 'password');
-    /* Run a search on the server */
-    $list = $link->search(
-      'ou=branch,dc=base',
-      "(&(objectClass=myClass)(myAttribute=*))",
-      ['myAttribute'],
-      'subtree'
-    );
-    /* Throw Ldap\Exception if the search returned an error */
-    $list->assert();
+    $ldap->bind('cn=admin,dc=fusiondirectory', 'password');
 
-    /* Iterate on search results */
-    foreach ($list as $dn => $entry) {
-      echo $dn.': '.$entry['myAttribute'][0]."\n";
-    }
-    /* Throw if there was an error while iterating */
-    $list->assertIterationWentFine();
+- Add an entry
 
-    /* Read root DSE information */
-    $dse = $link->getDSE();
+.. code-block:: php
 
+  <?php
+    require 'FusionDirectory/Ldap/autoload.php';
+
+    use \FusionDirectory\Ldap;
+    /* Open a connection */
+    $ldap = new Ldap\Link('ldap://localhost:389/');
+    
+    /* Simple bind */
+    $ldap->bind('cn=admin,dc=fusiondirectory', 'password');
+    
     /* Add an entry */
-    $add = $link->add(
-      'ou=entry,ou=branch,dc=base',
+    $add = $ldap->add(
+      'ou=entry,ou=branch,dc=fusiondirectory',
       [
         'objectClass' => 'organizationalUnit',
         'ou' => 'entry'
       ]
     );
+
     /* Throw Ldap\Exception if the add operation returned an error */
     $add->assert();
+
+- Delete an entry
+
+.. code-block:: php
+
+  <?php
+    require 'FusionDirectory/Ldap/autoload.php';
+
+    use \FusionDirectory\Ldap;
+    /* Open a connection */
+    $ldap = new Ldap\Link('ldap://localhost:389/');
+    
+    /* Simple bind */
+    $ldap->bind('cn=admin,dc=fusiondirectory', 'password');
+    
+    /* Delete an entry */
+    $delete = $ldap->delete('ou=entry,ou=branch,dc=fusiondirectory');
+
+    /* Throw Ldap\Exception if the delete operation returned an error */
+    $delete->assert();
+
+- Make a search
+
+.. code-block:: php
+
+  <?php
+    require 'FusionDirectory/Ldap/autoload.php';
+
+    use \FusionDirectory\Ldap;
+    /* Open a connection */
+    $ldap = new Ldap\Link('ldap://localhost:389/');
+    
+    /* Simple bind */
+    $ldap->bind('cn=admin,dc=fusiondirectory', 'password');
+    
+    /* Make a search */
+    $list = $ldap->search('dc=fusiondirectory', '(ou=*)', ['ou'], 'subtree');
+
+    /* Throw FusionDirectory\Ldap\Exception if there was an error */
+    $list->assert();
+
+    /* Browse results, Ldap\Result is Traversable */
+    foreach ($list as $dn => $attributes) {
+      echo $dn.': '.$attributes['ou'][0]."\n";
+    }
 
 Other useful helpers
 --------------------
