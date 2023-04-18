@@ -6,6 +6,9 @@ How to create a release of our various softwares
 .. toctree::
    :maxdepth: 2
 
-   fusiondirectory-source.rst
+   fusiondirectory.rst
+   fusiondirectory-integrator.rst
+   fusiondirectory-orchestrator.rst
+   fusiondirectory-tools.rst
    argonaut-source.rst   
    new-feature-branch.rst
