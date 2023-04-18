@@ -1,5 +1,5 @@
-How to release a FusionDirectory Version
-========================================
+How to release a FusionDirectory Orchestrator Version
+=====================================================
 
 -  Update the AUTHORS.md file
 -  Updates the Changelog.md
