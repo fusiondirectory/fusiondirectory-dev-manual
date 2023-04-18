@@ -10,5 +10,4 @@ How to create a release of our various softwares
    fusiondirectory-integrator.rst
    fusiondirectory-orchestrator.rst
    fusiondirectory-tools.rst
-   argonaut-source.rst   
    new-feature-branch.rst
