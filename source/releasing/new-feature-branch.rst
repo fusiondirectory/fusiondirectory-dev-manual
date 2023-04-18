@@ -1,5 +1,5 @@
-Create the new features branch for FusionDirectory and Argonaut
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create the new features branch for FusionDirectory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Create the new milestone
 -  Create the new features branch from master
@@ -20,12 +20,6 @@ Create the new milestone
    -  Start date, date of the milestone creation
    -  Stop date is start date + 3 month
 
--  For Argonaut
-
-   -  Argonaut 1.3.x
-   -  Start date, date of the milestone creation
-   -  Stop date is start date + 3 month
-
 Create a new fixes branch from master
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -35,7 +29,6 @@ ex: **1.3** is released the feature branch is **1.3-fixes**
 
 Remove the branch we just merged
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 Merge Changelog.md, Authors.md, UPGRADE.md into into the developement branch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,7 +69,3 @@ Change the version number in :
    define ("FD_VERSION", "1.2-fixes");
 
 .. _milestones :  https://gitlab.fusiondirectory.org/groups/fusiondirectory/-/milestones
-.. _user manual issues: https://gitlab.fusiondirectory.org/fusiondirectory/user-manual/-/issues
-.. _user manual supported : https://fusiondirectory-user-manual.readthedocs.io/en/latest/fusiondirectory/update/supported/index.html
-.. _Argonaut tags : https://gitlab.fusiondirectory.org/fusiondirectory/argonaut/-/tags
-.. _schema history : https://gitlab.fusiondirectory.org/fusiondirectory/schema-history/pipelines
