@@ -10,4 +10,3 @@ How to create a release of our various softwares
    fusiondirectory-integrator.rst
    fusiondirectory-orchestrator.rst
    fusiondirectory-tools.rst
-   new-feature-branch.rst
