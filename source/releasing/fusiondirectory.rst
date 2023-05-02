@@ -84,18 +84,6 @@ you can run for example
 
 directly in the user-manual source to generate the content to copy/paste at the end of UPGRADE.MD
 
-Update manpages
-^^^^^^^^^^^^^^^
-
-Regenerate the manpages with the new version, use the
-**update-manpages.sh** from the dev-tools
-
-.. code:: shell
-
-   update-manpages.sh fusiondirectory 1.2.3 
-
-this as to be done for fusiondirectory
-
 Merge the fixes branch into master
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
