@@ -1,7 +1,11 @@
-Distribution and PHP support
-============================
+Support
+=======
+
+FusionDirectory Support Options
 
 .. toctree::
    :maxdepth: 2
 
-   osandphp
+   professional
+   community
+

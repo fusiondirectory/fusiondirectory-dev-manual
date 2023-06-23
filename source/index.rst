@@ -16,17 +16,13 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   contribute/index
-   coding/index
-   pluginsystem/index
-   api/index
-   schemas/index
-   themes/index
-   translate/index
-   release/index
-   support/index
-   license/index
+   fusiondirectory/index.rst
+   development/index.rst
+   releasing/index.rst
+   support/index.rst
+   security/index.rst
+   contact/contact.rst
+   code-of-conduct.rst
 
 .. include:: globals.rst
-
 
