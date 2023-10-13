@@ -8,7 +8,6 @@ How to release a FusionDirectory Version
    fusiondirectory-plugins
 -  Write the upgrade documentation
 -  Update the UPGRADE.md
--  Regenerate the manpages with the new version
 -  Merge the branch into master for fusiondirectory and fusiondirectory
    plugins
 
@@ -95,8 +94,6 @@ Tag the release
 After merging the release we need to tag the release. go to `FusionDirectory tags`_ and `FusionDirectory Plugin tags`_
 
 -  Paste the Changelog.md corresponding to the release we just made
--  Upload the fusiondirectory-xxx.tar.gz and
-   fusiondirectory-plugins-xxx.tar.gz to the tag
 
 Run the ci for the schema-history website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -111,4 +108,4 @@ The CI is at `schema history`_
 .. _user manual supported : https://fusiondirectory-user-manual.readthedocs.io/en/latest/fusiondirectory/update/supported/index.html
 .. _FusionDirectory tags : https://gitlab.fusiondirectory.org/fusiondirectory/fd/tags
 .. _FusionDirectory Plugin tags : https://gitlab.fusiondirectory.org/fusiondirectory/fd-plugins/tags
-.. _schema history : https://gitlab.fusiondirectory.org/fusiondirectory/schema-history/pipelines
+.. _schema history : https://gitlab.fusiondirectory.org/applications/schema-history
