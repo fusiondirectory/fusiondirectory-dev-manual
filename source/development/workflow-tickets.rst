@@ -60,8 +60,8 @@ if some more info is needed to act on the report
 -  The **need info** label should be added, don’t hesitate to ping the
    user reporting the bug with **@(useranme)** to ask him to check it out
 
-If the change need to be cherry-picked in a -fixes version
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If the change need to be merged in a fixed version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  The **fixes** label is added, when the cherry-pick as been merged we
    remove the **fixes** and add the **fixes-merged** label

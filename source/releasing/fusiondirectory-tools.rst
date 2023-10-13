@@ -5,9 +5,9 @@ How to release a FusionDirectory  Tools Version
 -  Updates the Changelog.md
 -  Write the upgrade documentation
 -  Update the UPGRADE.md
--  Merge the fixes branch into master
+-  Merge the branch into master
 
-All those operations have to be made onto the 1.x-fixes branch each one
+All those operations have to be made onto a branch each one
 of them inside a ticket with the label ~release and with a **MR**
 
 Update the AUTHORS file
@@ -57,8 +57,8 @@ you can run for example
 
 directly in the user-manual source to generate the content to copy/paste at the end of UPGRADE.MD
 
-Merge the fixes branch into master
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Merge the branch into master
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Only a gitlab master account user can do the merge on the master branch
 

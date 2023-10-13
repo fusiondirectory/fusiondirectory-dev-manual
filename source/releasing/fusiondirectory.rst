@@ -12,7 +12,7 @@ How to release a FusionDirectory Version
 -  Merge the branch into master for fusiondirectory and fusiondirectory
    plugins
 
-All those operations have to be made onto the 1.x-fixes branch each one
+All those operations have to be made onto a branch each one
 of them inside a ticket with the label ~release and with a **MR**
 
 Updates the locales
@@ -84,8 +84,8 @@ you can run for example
 
 directly in the user-manual source to generate the content to copy/paste at the end of UPGRADE.MD
 
-Merge the fixes branch into master
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Merge the branch into master
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Only a gitlab master account user can do the merge on the master branch
 
