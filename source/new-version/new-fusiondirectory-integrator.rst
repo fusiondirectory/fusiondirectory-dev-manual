@@ -11,16 +11,6 @@ Create the new milestone
 
    -  FusionDirectory Integrator version
    -  Start date, date of the milestone creation
-   -  Stop date is start date + 3 month
-
-Create a new fixes branch from master
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We need to create a branch 
-
-The branch should be named with the version of the release followed by **-fixes**.
-
-ex: **1.3** is released the feature branch is **1.3-fixes**
-
+   -  Stop date is start date + 6 month
 
 .. _milestones :  https://gitlab.fusiondirectory.org/groups/fusiondirectory/-/milestones
