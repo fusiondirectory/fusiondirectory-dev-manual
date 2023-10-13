@@ -18,12 +18,11 @@ Branches
 On the Git repository, you will  find several existing branches:
 
 * `master` contains latest released official code,
-* `xxx-fixes` contains the next minor release source code,
-* `xxx-dev` contains the next major release source-code,
+* `dev` contains the current code in development,
 
-The `xxx-dev` branch is where new features are added. This code is reputed as **non stable**.
+The `dev` branch is where new features are added. This code is reputed as **non stable**.
 
-The `xxx-fixes` branches is where bugs are fixed. This code is reputed as *stable*.
+The `master` branch is the released code. This code is reputed as *stable*.
 
 .. _fhs:
 
