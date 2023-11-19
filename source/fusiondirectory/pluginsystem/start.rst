@@ -165,7 +165,7 @@ Displaying the plugin in FusionDirectory
 ----------------------------------------
 
 * Put the plugin code into a directory FusionDirectory is reading (see above).
-* Run :shell:`fusiondirectory-setup --update-cache` as root.
+* Run :shell:`fusiondirectory-configuration-manager --update-cache` as root.
 * Log out, log in.
 
 A tab should now shows in user edition mode, with the attributes we specified:
