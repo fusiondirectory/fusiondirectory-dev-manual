@@ -124,6 +124,7 @@ zimbra-fd-conf.schema                 86
 mailinblack-fd.schema                 87
 fdFranceConnect.schema                88
 dolibarr-fd.schema                    89
+notifications-fd.schema               90
 ===================================== =====================
 
 ===================================== =====================
