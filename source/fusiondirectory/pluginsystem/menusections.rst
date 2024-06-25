@@ -54,6 +54,12 @@ Systems (systems) - 10
   * Samba domains - 40
   * SOGo - 50
 
+Access Control (accessControl) - 11
+-----------------------------------
+
+* aclRole - 1
+* aclManagement - 2
+
 Configuration (conf) - 20
 -------------------------
 
@@ -65,6 +71,12 @@ Configuration (conf) - 20
   * Subscription
   * Mail Templates - 30
   * Tasks - 31
+
+Workflow (workflow) - 29
+------------------------
+
+* mail template - 1
+* tasks management - 2
     
 Dashboard (dashboard) - 30
 --------------------------
