@@ -32,8 +32,20 @@ Users and groups (accounts) - 0
   * Password Policies - 57
   * Applications - 60
 
-Systems (systems) - 10
-----------------------
+Access Control (accessControl) - 1
+----------------------------------
+
+* aclRole - 0
+* aclManagement - 1
+
+Workflow (workflow) - 2
+------------------------
+
+* mail template - 0
+* tasks management - 1
+
+Systems (systems) - 3
+---------------------
 
 * Systems - 0-19
 
@@ -54,14 +66,29 @@ Systems (systems) - 10
   * Samba domains - 40
   * SOGo - 50
 
-Access Control (accessControl) - 11
------------------------------------
-
-* aclRole - 1
-* aclManagement - 2
-
-Configuration (conf) - 20
+Dashboard (dashboard) - 4
 -------------------------
+
+* Tasks Dashboard - 0
+* Plugins - 1
+* Deployment queue
+
+Reporting (reporting) - 5
+-------------------------
+
+* Debug help - 1
+* Inventory objects - 5
+* Audit
+* Archived objects
+
+Export / Import (export) - 6
+----------------------------
+
+* LDAP import/export - 10
+* OPSI import - 15
+
+Configuration (conf) - 7
+------------------------
 
 * Configuration - 0-9
 
@@ -71,31 +98,3 @@ Configuration (conf) - 20
   * Subscription
   * Mail Templates - 30
   * Tasks - 31
-
-Workflow (workflow) - 29
-------------------------
-
-* mail template - 1
-* tasks management - 2
-    
-Dashboard (dashboard) - 30
---------------------------
-
-* Plugins - 0
-* Tasks Dashboard
-* Deployment queue
-
-Reporting (reporting) - 40
---------------------------
-
-* Debug help - 1
-* Inventory objects - 5
-* Audit
-* Archived objects
-
-Export / Import (export) - 50
------------------------------
-  
-* LDAP import/export - 10
-* OPSI import - 15
-
