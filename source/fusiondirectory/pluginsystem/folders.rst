@@ -5,14 +5,26 @@ Plugin folder organization
 
 The directories in a FusionDirectory plugin look like this:
 
-* |folder| `addons`: used if the plugin put things in the addons menu category
+* |folder| `management`: management dir, used to store all management class files and related sub-classes. (Column, filter ...). 
+  * |folder| `plugin_name`
+* |folder| `configuration`: configuration dir, used if the plugin need to store option in ldap, also refered as backend configuration.
+  * |folder| `backend`: configuration files are included within the backend folder for all plugins.
+    * |folder| `plugin_name`
+  * |folder| `core` : configuration files related to FusionDirectory core only.
 
-* |folder| `admin`: main dir for all plugins going into the admin menu category
-* |folder| `config`: configuration dir, used if the plugin need to store option in ldap
+* |folder| `dashboard`: dir containing classes related to showing states of progression. (Deployment queue, tasks, plugins list). 
+  * |folder| `plugin_name`
+
+* |folder| `workflow`: dir containing classes related to workflow logic, mostly used in combination with FusionDirectory Orchestrator 
+  * |folder| `plugin_name`
+
 * |folder| `contrib`: used to put all the contributed files like schema, docs, manpages etc..
 
   * |folder| `openldap`: Schemas for the openldap server
   * |folder| `docs`: Documentation how to use the plugin
+  * |folder| `screenshots`: Images used to integrate with FusionDirectory marketplace.
+  * |folder| `etc`: Files and information required by the plugin, such as autoloading specific data.
+  * |folder| `yaml`: A yaml file describing plugins information, allowing the plugin to be automatically install via fusiondirectory-plugin-manager.
 
 * |folder| `html`: used to put all the images or other public files
 
@@ -58,7 +70,7 @@ For instance, argonaut plugin contains *admin/systems/argonaut/class_argonautCli
 Installation of a plugin
 ------------------------
 
-For **addons**, **admin**, **config**, and **personal** folders, the content should go into *<fd_dir>/plugins/<dir>*/
+For **management**, **configuration/backend**, and **personal** folders, the content should go into *<fd_dir>/plugins/<dir>*/
 
 For **html**, **ihtml**, **include**, the content should go into *<fd_dir>/<dir>*/
 
