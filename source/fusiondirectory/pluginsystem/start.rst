@@ -7,13 +7,14 @@ This page is a how-to to help you write a dummy plugin.
 Directory organization
 ----------------------
 
-Your plugin should take place in *{fd-directory}/plugins/addons/yourpluginname* for an addon.
+Your plugin should take place in *{fd-directory}/plugins/{section}/yourpluginname* 
+See directory structure to understand which {section} to select.
 
 Plugins adding a user tab should go into *{fd-directory}/plugins/personal/yourpluginname*.
 
-Plugins adding a system tab should go into *{fd-directory}/plugins/admin/systems/yourpluginname*.
+Plugins adding a system tab should go into *{fd-directory}/plugins/management/systems/yourpluginname*.
 
-Plugins adding a service should go into *{fd-directory}/plugins/admin/systems/services/yourpluginname*.
+Plugins adding a service should go into *{fd-directory}/plugins/management/systems/services/yourpluginname*.
 
 Your main file should be named *class_MyPluginClass.inc*.
 
