@@ -69,11 +69,11 @@ The directories in a FusionDirectory plugin look like this:
 * |folder| `personal`: used when plugin is to be used to manage user properties
 * |folder| `includes`: used for files available for inclusion for other plugins
 
-addons, admin, config, personal
--------------------------------
+Management, configuration/backend, workflow, personal, dashboard
+----------------------------------------------------------------
 
 These directories should contain a subdirectory named as the plugin, or as an other plugin which we extend.
-For instance, argonaut plugin contains *admin/systems/argonaut/class_argonautClient.inc*
+For instance, argonaut plugin contains *management/systems/argonaut/class_argonautClient.inc*
 
 Installation of a plugin
 ------------------------
