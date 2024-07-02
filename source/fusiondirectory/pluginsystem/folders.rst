@@ -6,16 +6,24 @@ Plugin folder organization
 The directories in a FusionDirectory plugin look like this:
 
 * |folder| `management`: management dir, used to store all management class files and related sub-classes. (Column, filter ...). 
+
   * |folder| `plugin_name`
+
 * |folder| `configuration`: configuration dir, used if the plugin need to store option in ldap, also refered as backend configuration.
-  * |folder| `backend`: configuration files are included within the backend folder for all plugins.
-    * |folder| `plugin_name`
+
   * |folder| `core` : configuration files related to FusionDirectory core only.
 
-* |folder| `dashboard`: dir containing classes related to showing states of progression. (Deployment queue, tasks, plugins list). 
+  * |folder| `backend`: configuration files are included within the backend folder for all plugins.
+
+    * |folder| `plugin_name`
+
+
+* |folder| `dashboard`: dir containing classes related to dashboard logic, pannels, information states.
+
   * |folder| `plugin_name`
 
-* |folder| `workflow`: dir containing classes related to workflow logic, mostly used in combination with FusionDirectory Orchestrator 
+* |folder| `workflow`: dir containing classes related to a workflow logic, mainly combined with Orchestrator
+
   * |folder| `plugin_name`
 
 * |folder| `contrib`: used to put all the contributed files like schema, docs, manpages etc..
