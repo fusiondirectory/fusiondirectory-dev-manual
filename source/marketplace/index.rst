@@ -12,4 +12,3 @@ If you are interested in helping other finding your plugins you will need to rea
    :maxdepth: 2
 
    yaml/index.rst
-   tags/index.rst
