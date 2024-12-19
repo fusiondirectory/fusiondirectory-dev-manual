@@ -1,3 +1,41 @@
+## %"FusionDirectory 1.4" - 2024-12-19
+
+### Added
+
+#### dev-manual
+- dev-manual#27 Document the rest api
+- dev-manual#54 Document fusiondirectory-ldap library
+- dev-manual#57 Add documentation about yaml file used to add a simple way to add / delete plugin
+- dev-manual#59 PL Section Priority update for Mail Template within Dev Manual
+- dev-manual#65 add the labeling workflow into the dev manual
+- dev-manual#71 Add documentation for integrator, tools, orchestrator
+- dev-manual#73 rewrote the new branch feature page
+- dev-manual#75 [User-Manual] 1.4 LDAP Numbering needs updates since FranceConnect new schema
+
+### Changed
+
+#### dev-manual
+- dev-manual#33 remove the need for main.inc from the dev manual
+- dev-manual#38 change the link for transifex in the manual
+- dev-manual#40 rework the manual to remove index with only 1 file
+- dev-manual#41 Adapt manual to new Dialogs interface
+- dev-manual#43 Access to rest.fusiondirectory.org
+- dev-manual#53 the minimal version of php for 1.4 has been changed this has to be reflected into the manual
+- dev-manual#62 Updates menu section numbering to include task within FD configuration section
+- dev-manual#81 Adapt the manual to the new rules of branch
+
+### Removed
+
+#### dev-manual
+- dev-manual#39 remove the proxy-fd.schema from the list of schema in the dev manual
+- dev-manual#74 Remove the manpages update section as we no longer have mapages
+
+### Fixed
+
+#### dev-manual
+- dev-manual#26 Review the developper manual and adapt it to the change we have made during filters / management reorganization
+- dev-manual#68 update the prerequisite for fusiondirectory 1.4
+
 ## %"FusionDirectory 1.3.1" - 2023-06-23
 
 ### Added
