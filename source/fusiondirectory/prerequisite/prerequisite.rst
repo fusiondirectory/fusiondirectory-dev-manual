@@ -20,7 +20,7 @@ FusionDirectory requires a web server that supports PHP, like:
 PHP
 ---
 
-As of 1.3.1 release, FusionDirectory will requires `PHP <http://php.net>`_ **7.3**
+As of 1.4 release, FusionDirectory requires `PHP <https://www.php.net>`_ 7.3 or 7.4.
 
 .. note::
 

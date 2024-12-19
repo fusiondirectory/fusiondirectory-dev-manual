@@ -18,7 +18,9 @@ Contents:
 
    fusiondirectory/index.rst
    development/index.rst
+   marketplace/index.rst
    releasing/index.rst
+   new-version/index.rst
    support/index.rst
    security/index.rst
    contact/contact.rst

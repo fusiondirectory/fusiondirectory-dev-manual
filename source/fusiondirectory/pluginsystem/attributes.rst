@@ -120,12 +120,12 @@ That would look like :
     new CompositeAttribute (
       _('Informations for ftp login'),
       'ftpLoginInfo',
-      array(
+      [
         new StringAttribute (_('Login'),    _('Login for FTP'),     'ftpLogin'),
         new StringAttribute (_('Password'), _('Password for FTP'),  'ftpPassword'),
         new StringAttribute (_('Host'),     _('Host for FTP'),      'ftpHost'),
         new IntAttribute    (_('Port'),     _('Port for FTP'),      'ftpPort', FALSE, 0, FALSE, 21),
-      ),
+      ],
       'ftp://%[^@:]:%[^@:]@%[^@:]:%d', // sscanf format
       'ftp://%s:%s@%s:%d'              // sprintf format
     )

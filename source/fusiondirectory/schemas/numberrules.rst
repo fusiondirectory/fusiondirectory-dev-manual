@@ -107,6 +107,23 @@ invitations-fd.schema                 69
 invitations-fd-conf.schema            70
 seafile-fd.schema                     71
 seafile-fd-conf.schema                72 (temporary waiting for confirmation)
+webauthn-fd.schema                    73
+webauthn-fd-conf.schema               74
+totp-fd.schema                        75
+totp-fd-conf.schema                   76
+autofs5-fd-conf.schema                77
+ipam-fd.schema                        78
+ipam-fd-conf.schema                   79
+nextcloud-fd.schema                   80
+archive-fd.schema                     81
+archive-fd-conf.schema                82
+zimbra-fd.schema                      83
+subscriptions-fd.schema               84
+subscriptions-fd-conf.schema          85
+zimbra-fd-conf.schema                 86
+mailinblack-fd.schema                 87
+fdFranceConnect.schema                88
+dolibarr-fd.schema                    89
 ===================================== =====================
 
 ===================================== =====================
@@ -123,7 +140,6 @@ Schema              Number attributed
 core-fd.schema      1.3.6.1.4.1.10098.1.1.12
 fai.schema          1.3.6.1.4.1.10098.1.1.5
 mail-fd.schema      1.3.6.1.4.1.10098.1.1.12
-proxy-fd.schema     1.3.6.1.4.1.10098.1.1.12
 service-fd.schema   1.3.6.1.4.1.10098.1.1.9
 system-fd.schema    1.3.6.1.4.1.10098.1.1.11
 =================== ======================================
