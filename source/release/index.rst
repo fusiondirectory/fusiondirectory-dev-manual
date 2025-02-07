@@ -6,5 +6,5 @@ This section explain the release cycle and where contributions and new features 
 .. toctree::
    :maxdepth: 2
 
-   releasepolicy
-   esr
+   releasepolicy.rst
+   releasecycle.rst
