@@ -1,4 +1,4 @@
-FusionDirectory marketplace
+FusionDirectory Marketplace
 ===========================
 
 The FusionDirectory marketplace is the best way to find new plugins for FusionDirectory. 

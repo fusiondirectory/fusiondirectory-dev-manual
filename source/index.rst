@@ -17,10 +17,13 @@ Contents:
    :maxdepth: 2
 
    fusiondirectory/index.rst
-   development/index.rst
-   marketplace/index.rst
-   releasing/index.rst
-   new-version/index.rst
+   fusiondirectory-integrator/index.rst
+   fusiondirectory-orchestrator/index.rst
+   fusiondirectory-webservice/index.rst
+   fusiondirectory-marketplace/index.rst
+   ldap/index.rst
+   release/index.rst
+   license/license.rst
    support/index.rst
    security/index.rst
    contact/contact.rst

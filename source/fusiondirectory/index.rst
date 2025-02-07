@@ -12,16 +12,7 @@ Contents:
    :maxdepth: 2
 
    whatis/fusiondirectory.rst
-   prerequisite/prerequisite.rst
-   distribution/certified-distribution.rst
-   contribute/guidelines.rst
-   coding/index
-   pluginsystem/index
-   api/index
-   schemas/index
-   themes/index
-   translate/translation.rst
-   release/index
-   license/license.rst
-   libraries/index
-
+   requirements/index.rst
+   development/index.rst
+   interface/index.rst
+   translation/translation.rst

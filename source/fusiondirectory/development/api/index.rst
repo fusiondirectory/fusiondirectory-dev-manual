@@ -7,5 +7,4 @@ FusionDirectory
    :maxdepth: 2
 
    api
-   webservice
 
