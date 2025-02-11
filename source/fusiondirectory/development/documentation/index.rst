@@ -1,8 +1,7 @@
 Writing documentation within your code
 =======================================
 
-You can properly write documentation within your code.
-This is our guidelines
+How to properly write documentation within your code.
 
 .. toctree::
    :maxdepth: 2
