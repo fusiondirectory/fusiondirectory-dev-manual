@@ -91,7 +91,7 @@ A PHPDoc comment starts with `/**` and ends with `*/`. Each line inside the bloc
 Documenting Classes & Files
 ---------------------------
 
-### Documenting a Class
+**Documenting a Class**
 
 .. code-block:: php
 
@@ -140,6 +140,7 @@ To generate documentation using Doxygen:
       doxygen -g Doxyfile
 
 3. **Modify the `Doxyfile`**:
+
    - Set `INPUT` to the PHP source code directory.
    - Enable `EXTRACT_ALL = YES` to parse all comments.
    - Set `FILE_PATTERNS = *.php` to only parse PHP files.
@@ -151,6 +152,7 @@ To generate documentation using Doxygen:
       doxygen Doxyfile
 
 5. **View the Output**:
+
    - Open `html/index.html` in a browser.
 
 -----------------
