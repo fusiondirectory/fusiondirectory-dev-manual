@@ -9,3 +9,4 @@ Development
    codingstyle/index.rst
    writeplugin/index.rst   
    api/index.rst
+   documentation/index.rst
