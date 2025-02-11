@@ -15,7 +15,6 @@ Introduction to PHPDoc
 ----------------------
 
 PHPDoc is a standardized way of documenting PHP code using special comment blocks (`/** ... */`).
-
 Doxygen can parse these comments to generate structured documentation.
 
 **Basic Example:**
@@ -88,9 +87,9 @@ A PHPDoc comment starts with `/**` and ends with `*/`. Each line inside the bloc
      - Indicates when a feature was added
      - ``@since 2.0``
 
---------------------------
+---------------------------
 Documenting Classes & Files
---------------------------
+---------------------------
 
 ### Documenting a Class
 
