@@ -33,7 +33,7 @@ To begin using Sphinx, follow these steps:
 
       pip install sphinx sphinx_rtd_theme
 
-2. **Create a New Documentation Project OR use our user-manual, dev-manul respositories**
+2. **Create a New Documentation Project OR use our user-manual, dev-manual respositories**
 
    .. code-block:: bash
 
