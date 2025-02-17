@@ -14,5 +14,6 @@ Contents:
    whatis/fusiondirectory.rst
    requirements/index.rst
    development/index.rst
+   sphinx/index.rst
    interface/index.rst
    translation/translation.rst
