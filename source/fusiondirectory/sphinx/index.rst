@@ -1,5 +1,5 @@
-Writing documentation for your new plugin
-=========================================
+Write User Documentation
+========================
 
 How to properly write a documentation in Sphinx for your new plugin.
 

@@ -101,19 +101,7 @@ Each attribute should be clearly described with its purpose, type, and possible 
      - **Type**: String
      - **Example**: ``user@example.com``
 
-4. Adding Code Examples
-Use code blocks to demonstrate examples. Ensure the language is specified for syntax highlighting.
-
-**Example (PHP):**
-
-.. code-block:: php
-
-   private static function example(string $myString): void {
-       // This is an example function
-       return "Hello, Sphinx!";
-   }
-
-5. Including Images and Diagrams
+4. Including Images and Diagrams
 Place images inside the `images/` folder and reference them in your documentation as follows:
 
 .. code-block:: rst
@@ -121,7 +109,7 @@ Place images inside the `images/` folder and reference them in your documentatio
    .. image:: images/example.png
       :alt: Example Image
 
-6. Cross-Referencing Sections and Files
+5. Cross-Referencing Sections and Files
 To create cross-references, use:
 
 .. code-block:: rst
