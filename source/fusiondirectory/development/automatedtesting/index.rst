@@ -16,6 +16,7 @@ In order for the existing tests to be running properly, some prerequisites are n
     * DSA server: some tests need a dsa server to be available in on the machine, this is done by modifying the orchestrator.conf file from your configuration path to have `tester` as both username and password
 
 .. setup:
+
 #####
 Setup
 #####
@@ -43,9 +44,10 @@ In order to run the tests properly you need to follow the next steps:
     * In both cases you can see which tests ran along with the running time and the result:
 
         * `PASSED` for successful test
-        * `FAILED` for failed test along with a short message (for troubleshooting see :ref:`troubleshooting`)
+        * `FAILED` for failed test along with a short message (for troubleshooting see :ref:troubleshooting)
 
 .. troubleshooting:
+
 ###############
 Troubleshooting
 ###############
@@ -67,7 +69,7 @@ All important modifiable parts of the code base are inside `qa` folder:
 
         * `resources` folder is where we place all of the additional files:
 
-            * `testsConfig.ini` file is the initial configuration for the tests, should be modified as stated in :ref:`setup`
+            * `testsConfig.ini` file is the initial configuration for the tests, should be modified as stated in :ref:setup
             * `ldifs` folder is where some ldif files are needed that will be inserted in the ldap server before the tests run
             * as a general rule, all additional files that are not java files, but needed for the tests should be placed here
         * `test/org/fd` folder is where we place all tests:
@@ -101,4 +103,5 @@ Before starting writing a test you should decide where to place it and in order 
     * Run `./gradlew checkstyleTest` and `./gradlew spotbugsTest` and fix the issues if any
     * Run the tests in your virtual machine and make sure they are passing
     * Run the tests in a bullseye docker image and ubuntu docker image to make sure everything works out smoothly
+
 By doing so, we reduce the number of failed pipelines and the process of merging source code is faster, since the purpose of the tests is to ease the development process and not to make it slower. To do so we need reliable tests.
