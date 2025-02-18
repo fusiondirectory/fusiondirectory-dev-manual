@@ -100,25 +100,45 @@ Once the branch is created, you can start development.
 5. Create an Issue on the Origin Project
 ----------------------------------------
 
-Once you have completed your development and your merge request is ready, you need to create an issue on the original project.
+Once you have completed your development and your Merge Request (MR) is ready, you must create an issue on the original project.
+This issue will help FusionDirectory developers review your contribution and track its integration into the main codebase.
 
-1. Navigate to the **Issues** section of the original project:
+### Steps to Create an Issue
 
+1. **Navigate to the Issues Section**
    - In the project repository, click **Issues** in the left sidebar.
    - Click the **New Issue** button.
 
-2. Fill in the issue details:
+   .. image:: images/NewIssueContribution.png
 
+2. **Fill in the Issue Details**
    - **Title**: Provide a concise and clear summary of the issue.
-   - **Description**: Explain the issue or feature request in detail, including expected behavior.
-   - **Template**: Use the available issue template and ensure all sections are completed correctly.
+   - **Description**: Explain the feature request or bug fix in detail, including expected behavior.
+   - **Template**: Use the appropriate issue template (e.g., **Contribution**), ensuring all sections are properly completed.
 
-3. In the **Description**, make sure to link your Merge Request from your personal fork.
-This allows the FusionDirectory developers to review your code and integrate it into the original codebase.
+3. **Link Your Merge Request**
+   - In the **Description**, include a direct link to your Merge Request from your personal fork.
+   - This allows FusionDirectory developers to easily access and review your changes.
 
-4. Click **Submit Issue** to create it.
+4. **Assign a FusionDirectory Team Member**
+   - Assign a FusionDirectory developer to review your issue and code.
+   - This ensures your contribution is processed efficiently.
+
+   .. image:: images/NewIssueContribution2.png
+
+5. **Submit the Issue**
+   - Click **Submit Issue** to create it.
+
+6. **Verify the Linked Merge Request**
+   - After submitting the issue, check if your Merge Request is automatically listed in the **Linked Items** section.
+   - If it is not linked, manually add a reference to your MR in this section.
+
+   .. image:: images/NewIssueContribution3.png
 
 ---
 
-That's it!
+**That's it!**
+
+Once a FusionDirectory team member receives a notification of your contribution, they will review your code and discuss any necessary changes using GitLab's comment section below your open issue.
+
 We look forward to your contributions and innovations!
