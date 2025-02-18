@@ -12,9 +12,12 @@ It covers account creation, issue creation, project forking, and submitting a Me
 We have a fully automated process to grant you the necessary permissions for contributing to our projects.
 
 Follow the link below to register:
-`https://iam.fusiondirectory.org/publicform.php?form=register`
 
-Once registered, go to our GitLab instance: `https://gitlab.fusiondirectory.org/` to log in and access projects.
+`FusionDirectory Registration <https://iam.fusiondirectory.org/publicform.php?form=register>`_
+
+Once registered, visit our GitLab instance to log in and access projects:
+
+`FusionDirectory GitLab <https://gitlab.fusiondirectory.org/>`_
 
 ------------------------------
 2. Select and Fork a Project
@@ -23,8 +26,8 @@ Once registered, go to our GitLab instance: `https://gitlab.fusiondirectory.org/
 1. After logging into GitLab, click **Projects** in the top navigation bar.
 
    .. note::
-      The default project is **FusionDirectory**, located here:
-      `https://gitlab.fusiondirectory.org/fusiondirectory/`
+      The default project is **FusionDirectory**, available here:
+      `FusionDirectory GitLab Project <https://gitlab.fusiondirectory.org/fusiondirectory/>`_
 
 2. Click **"Explore Projects"** to browse available repositories or **"Your Projects"** to view assigned projects.
 3. Most development work occurs in the **fd-plugins** section, so navigate there if applicable.
@@ -38,7 +41,7 @@ Once registered, go to our GitLab instance: `https://gitlab.fusiondirectory.org/
 
 6. Click **Fork Project**.
 
-You will be automatically redirected to your own space, where you can now modify the project and create your first Merge Request.
+You will be automatically redirected to your personal namespace, where you can modify the project and create your first Merge Request.
 
 ------------------------------
 3. Create a Development Branch
@@ -103,7 +106,7 @@ Once the branch is created, you can start development.
 Once you have completed your development and your Merge Request (MR) is ready, you must create an issue on the original project.
 This issue will help FusionDirectory developers review your contribution and track its integration into the main codebase.
 
-### Steps to Create an Issue
+**Steps to Create an Issue**
 
 1. **Navigate to the Issues Section**
    - In the project repository, click **Issues** in the left sidebar.
