@@ -6,6 +6,7 @@ Development
 
 
    contribute/guidelines.rst
+   howtodev/index.rst
    codingstyle/index.rst
    writeplugin/index.rst   
    api/index.rst
