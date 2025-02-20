@@ -1,18 +1,30 @@
-==========================
+===============================
 Creating an Orchestrator Plugin
-==========================
+===============================
 
-This guide explains how to create an Orchestrator Plugin, implementing potential "Strategy development pattern" using
-interfaces implementation.
+This guide explains how to create an Orchestrator Plugin by implementing the **Strategy & Factory Design Pattern** using a mandatory interface implementation.
+
+------------------
+0. Plugin Location
+------------------
+
+A folder named ``fusiondirectory-orchestrator/plugins`` has been created to store your classes.
+
+At the time of writing, the orchestrator is primarily used for **task processing**.
+
+Therefore, it makes sense to place your classes within the ``tasks`` directory inside ``plugins``, though this is not mandatory.
+
+.. note::
+   Your plugin will be **automatically autoloaded**.
+   It will be used as an argument for the endpoint tasks: ``<orchestrator_url>/api/tasks/your_plugin_name``
 
 -------------------------------
 1. Implementing the Interface
 -------------------------------
 
-An Orchestrator Plugin must implement the ``EndpointInterface`` to define the required methods for handling API requests.
-Each method corresponds to an HTTP operation (GET, POST, DELETE, PATCH), allowing structured API interactions.
+An Orchestrator Plugin **must implement** the ``EndpointInterface`` to define the required methods for handling API requests. Each method corresponds to an HTTP operation (**GET, POST, DELETE, PATCH**), ensuring structured API interactions.
 
-To create a new plugin, define a class that implements this interface and ensure it includes the necessary methods.
+To create a new plugin, define a class that implements this interface and includes the necessary methods:
 
 .. code-block:: php
 
@@ -31,14 +43,15 @@ To create a new plugin, define a class that implements this interface and ensure
         }
     }
 
-The constructor takes a ``TaskGateway`` object, which serves as an interface to interact with external services such as LDAP.
-This gateway will be used within the methods to fetch, update, and delete data.
+The constructor takes a ``TaskGateway`` object, which acts as an interface for interacting with external services such as **LDAP**. This gateway will be used within the methods to fetch, update, and delete data.
 
 ----------------------------------
 2. Handling GET Requests
 ----------------------------------
 
-The **GET method** is used to retrieve existing data, such as tasks or configurations, from the system.
+The **GET method** retrieves existing data, often from **LDAP**.
+
+If additional processing is required, you are free to extend the logic by calling new methods within your tasks.
 
 .. code-block:: php
 
@@ -56,16 +69,11 @@ The **GET method** is used to retrieve existing data, such as tasks or configura
         // Implement logic to fetch and return data
     }
 
-**Explanation:**
-- This method is responsible for fetching data when an API request is made with ``GET``.
-- It can retrieve information from LDAP or other sources via the ``TaskGateway``.
-- The returned data should be formatted as an **array**.
-
 ----------------------------------
 3. Handling POST Requests
 ----------------------------------
 
-The **POST method** is used to create new records in the system.
+The **POST method** is used to create new records.
 
 .. code-block:: php
 
@@ -84,16 +92,11 @@ The **POST method** is used to create new records in the system.
         return [];
     }
 
-**Explanation:**
-- This method processes **new data submissions** (e.g., creating a new task).
-- The input data is passed as an array, and it should be processed and stored accordingly.
-- The return value should be an array indicating whether the operation was **successful or failed**.
-
 ----------------------------------
 4. Handling DELETE Requests
 ----------------------------------
 
-The **DELETE method** is used to remove existing records.
+The **DELETE method** removes existing records.
 
 .. code-block:: php
 
@@ -112,16 +115,13 @@ The **DELETE method** is used to remove existing records.
         return [];
     }
 
-**Explanation:**
-- This method allows deleting records, such as removing a scheduled task.
-- The ``$data`` array should contain information about what needs to be deleted.
-- The method should return an array confirming the **successful deletion**.
-
 ----------------------------------
 5. Handling PATCH Requests
 ----------------------------------
 
-The **PATCH method** is used to update specific fields of an existing record.
+The **PATCH method** updates specific fields of an existing record.
+
+It can also be used to **trigger execution** of specific elements without necessarily updating data.
 
 .. code-block:: php
 
@@ -142,36 +142,38 @@ The **PATCH method** is used to update specific fields of an existing record.
         // Implement update logic here
     }
 
-**Explanation:**
-- This method is used when modifying specific attributes of an existing record.
-- Unlike ``POST``, which creates new data, ``PATCH`` **updates existing values**.
-- The method should ensure only relevant fields are updated without affecting unrelated data.
+.. note::
+   The **PATCH method** is **strongly recommended** in the official FusionDirectory Orchestrator client to execute task flows.
 
 -------------------------------
 6. Understanding the Components
 -------------------------------
 
-The plugin interacts with the system using the ``TaskGateway`` class, which provides a bridge to external services like LDAP.
+Your plugin interacts with key components such as ``TaskGateway``, which provides a bridge to **external services like LDAP**.
+
+**Key Elements**
 
 - **TaskGateway Integration**:
-  - The ``TaskGateway`` object allows retrieving and modifying data.
-  - It serves as an abstraction layer to interact with FusionDirectory’s tasks.
+
+  - Allows retrieving and modifying data.
+  - Acts as an abstraction layer for FusionDirectory’s tasks.
 
 - **HTTP Method Mappings**:
-  - ``processEndPointGet()`` → Handles GET requests to fetch existing records.
-  - ``processEndPointPost()`` → Handles POST requests to create new entries.
-  - ``processEndPointDelete()`` → Handles DELETE requests to remove entries.
-  - ``processEndPointPatch()`` → Handles PATCH requests to update existing records.
+
+  - ``processEndPointGet()`` → Handles **GET** requests for fetching records.
+  - ``processEndPointPost()`` → Handles **POST** requests for creating entries.
+  - ``processEndPointDelete()`` → Handles **DELETE** requests for removing entries.
+  - ``processEndPointPatch()`` → Handles **PATCH** requests for updating records.
 
 -------------------------------
 7. Summary
 -------------------------------
 
-To create a new orchestrator plugin:
+To create a new Orchestrator Plugin:
 
 1. **Define a class** that implements ``EndpointInterface``.
-2. **Inject the TaskGateway** in the constructor to enable interaction with external data sources.
-3. **Implement all required methods** to properly handle API requests.
+2. **Inject the TaskGateway** in the constructor for interaction with external data sources.
+3. **Implement all required methods** to handle API requests properly.
 4. **Use appropriate logic** within each method to interact with FusionDirectory (e.g., querying LDAP, managing tasks).
 
-By following this structure, you can integrate new functionality into FusionDirectory’s Orchestrator efficiently.
+By following this structure, you can efficiently integrate new functionality into FusionDirectory’s Orchestrator.
