@@ -80,9 +80,8 @@ The **POST method** is used to create new records.
     /**
      * Handles POST requests.
      *
-     * This method is responsible for creating new records in the system.
-     * It is typically used when an administrator or an external service
-     * submits new data to be stored (e.g., adding a new task to LDAP).
+     * This method is responsible for creating new records based on your data logic.
+     * You might have developed a plugin with its own LDAP schema.
      *
      * @param array|null $data Input data to be processed and stored.
      * @return array The response indicating success or failure.
@@ -103,9 +102,7 @@ The **DELETE method** removes existing records.
     /**
      * Handles DELETE requests.
      *
-     * This method removes existing records from the system.
-     * It is used when an administrator or system process
-     * wants to delete a task or configuration from the directory.
+     * This method removes existing records based on your data handling logic.
      *
      * @param array|null $data Information about what should be deleted.
      * @return array The response confirming the deletion.
