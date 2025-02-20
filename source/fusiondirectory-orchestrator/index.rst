@@ -6,3 +6,4 @@ FusionDirectory Orchestrator
 
    whatis/orchestrator.rst
    requirements/mandatory.rst
+   development/index.rst
