@@ -52,7 +52,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'FusionDirectory development'
 copyright = u'2017-2024 FusionDirectory'
-author = u'Benoit Mortier Côme Chilliet Thibault Dockx Jonathan Swaelens'
+author = u'Benoit Mortier Côme Chilliet Thibault Dockx Jonathan Swaelens Oana Eliza'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
