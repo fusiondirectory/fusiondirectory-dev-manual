@@ -127,6 +127,7 @@ dolibarr-fd.schema                    89
 notifications-fd.schema               90
 notifications-fd-conf.schema          91
 lifecycle-fd.schema                   92
+extractor-fd.schema                   93
 ===================================== =====================
 
 ===================================== =====================
