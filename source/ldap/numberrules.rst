@@ -129,6 +129,7 @@ notifications-fd-conf.schema          91
 lifecycle-fd.schema                   92
 extractor-fd.schema                   93
 automatic-groups-fd.schema            94
+extractor-fd-conf.schema              95
 ===================================== =====================
 
 ===================================== =====================
