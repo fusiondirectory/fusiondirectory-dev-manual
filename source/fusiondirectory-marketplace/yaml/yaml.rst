@@ -3,11 +3,12 @@ Creating the yaml file
 
 A yaml file must be created in the root folder of your plugin named "control.yaml"
 
-There is 3 parts:
+There is 4 parts:
 
   * information : Mandatory to define the plugin
   * support : Mandatory, content must be equal to the support provided : community is a reserved word for non-company support.
   * requirement : Optional but it's encouraged to fill it
+  * content : Optional for the community provider to install the plugin automatically
 
 Information
 -----------
@@ -127,7 +128,7 @@ Syntax
 +------------+-----------+-----------------------------------------------------------------------------+
 | phpVersion | mandatory | Minimal version  of PHP need for this plugin using semantic versionning     |
 +------------+-----------+-----------------------------------------------------------------------------+
-| plugins    | optionnal | List of plugins dependencies                                                |
+| plugins    | optional  | List of plugins dependencies                                                |
 +------------+-----------+-----------------------------------------------------------------------------+
 
 
@@ -140,3 +141,29 @@ Example
       fdVersion : 1.4
       phpVersion : 7.2.0
 
+
+Content
+-------
+
+Syntax
+^^^^^^
+
++------------+-----------+-----------------------------------------------------------------------------+
+| keyword    | presence  | description                                                                 |
++============+===========+=============================================================================+
+| fileList   | optional  | List of files to be copied                                                  |
++------------+-----------+-----------------------------------------------------------------------------+
+
+Example
+^^^^^^^
+
+.. code-block:: yaml
+
+    content :
+      fileList :
+      - './contrib/openldap/schema.schema'
+      - './contrib/yaml/description.yaml'
+      - './personal/pluginName/class_pluginName.inc'
+      - './config/pluginName/class_pluginName.inc'
+      - './html/themes/breezy/icons/16/apps/pluginName.png'
+      - './html/themes/breezy/icons/48/apps/pluginName.png'
