@@ -37,7 +37,7 @@ Attribution
 Schema                                Number attributed
 ===================================== =====================
 recovery-fd.schema                    1
-argonaut-fd.schema                    2
+argonaut-fd.schema                    2 (removed)
 quota-fd.schema                       3
 debconf-fd.schema                     4
 zimbra-fd.schema                      5
