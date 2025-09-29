@@ -131,6 +131,7 @@ extractor-fd.schema                   93
 automatic-groups-fd.schema            94
 fusiondirectory-orchestrator.schema   95
 extractor-fd-conf.schema              96
+sieve-fd.schema                       97
 ===================================== =====================
 
 ===================================== =====================
