@@ -132,7 +132,7 @@ automatic-groups-fd.schema            94
 fusiondirectory-orchestrator.schema   95
 extractor-fd-conf.schema              96
 sieve-fd.schema                       97
-physical-fd.schema                    98
+physical-key-fd.schema                98
 ===================================== =====================
 
 ===================================== =====================
