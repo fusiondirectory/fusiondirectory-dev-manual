@@ -135,6 +135,7 @@ sieve-fd.schema                       97
 physical-key-fd.schema                98
 macro-fd-conf.schema                  99
 eduperson-fd.schema                   100
+sinaps-fd.schema                      101
 ===================================== =====================
 
 ===================================== =====================
