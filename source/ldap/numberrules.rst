@@ -62,7 +62,7 @@ fax-fd-conf.schema                    24
 fai-fd-conf.schema                    25
 nagios-fd-conf.schema                 26
 board-fd-conf.schema                  27
-health-fd.schema                      28 *reserved for Harmo*
+supann-fd.schema                      28
 ipmi-fd.schema                        29
 weblink-fd.schema                     30
 dovecot-fd.schema                     31
@@ -122,7 +122,7 @@ subscriptions-fd.schema               84
 subscriptions-fd-conf.schema          85
 zimbra-fd-conf.schema                 86
 mailinblack-fd.schema                 87
-fdFranceConnect.schema                88
+fdFranceConnect.schema                88 (merge dans supann-fd.schema)
 dolibarr-fd.schema                    89
 notifications-fd.schema               90
 notifications-fd-conf.schema          91
